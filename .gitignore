@@ -1,1 +1,7 @@
-*.log
+.DS_Store
+public/images/plot-*
+public/images/scatter_plot.jpg
+public/stylesheets/logjam.css
+db/schema.rb
+log/*.log
+tmp
