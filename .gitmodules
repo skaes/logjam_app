@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/logjam"]
+	path = vendor/plugins/logjam
+	url = git@github.com:alpinegizmo/logjam.git
