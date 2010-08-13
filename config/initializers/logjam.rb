@@ -3,7 +3,7 @@
 
 module Logjam
   # Set base url when embedding logam into your main app
-  # Logjam.base_url = 'stats'
+  # Logjam.base_url = '/stats'
 
   # Set import_threshold. Requests fast than the threshold will not be stored in mongo.
   # Their performance data is added to the stats, though. Default is 0.
