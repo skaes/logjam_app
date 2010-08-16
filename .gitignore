@@ -2,6 +2,7 @@
 public/images/plot-*
 public/images/scatter_plot.jpg
 public/stylesheets/logjam.css
+public/javascripts/protovis-r3.2.js
 db/schema.rb
 log/*.log
 tmp
