@@ -1,8 +1,11 @@
 .DS_Store
 public/images/plot-*
 public/images/scatter_plot.jpg
+public/images/zoom_in.png
+public/images/stream.gif
 public/stylesheets/logjam.css
 public/javascripts/protovis-r3.2.js
+public/javascripts/jquery-1.4.2.min.js
 db/schema.rb
 log/*.log
 tmp
