@@ -1,14 +1,14 @@
 development:
-    hostname: localhost
+    host:     localhost
     exchange: logjam-development-exchange
     queue:    logjam-development-queue
 
 test:
-    hostname: localhost
+    host:     localhost
     exchange: logjam-test-exchange
     queue:    logjam-test-queue
 
 production:
-    hostname: localhost
+    host:     localhost
     exchange: logjam-production-exchange
     queue:    logjam-production-queue
