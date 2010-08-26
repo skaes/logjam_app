@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
+
 require File.expand_path(File.dirname(__FILE__)+'/../config/environment.rb')
+
+application = ARGV.first
+
+puts "Starting amqp importer for rails environment '#{RAILS_ENV}'"
 
 trap("INT") do
   puts "Cleaning up AMQP connection"
@@ -7,5 +12,5 @@ trap("INT") do
   exit
 end
 
-@amqp_importer = Logjam::AMQPImporter.new
+@amqp_importer = Logjam::AMQPImporter.new(application)
 @amqp_importer.process
