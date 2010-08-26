@@ -10,7 +10,7 @@ capistrano_install = File.exist?(script_dir + '/../../shared') && File.exist?(sc
 
 pid_file_dir = File.expand_path(capistrano_install ? "#{script_dir}/../../shared/pids" : "#{script_dir}/../tmp/pids")
 
-command, controller_options, application = Daemons::Controller.split_argv(ARGV)
+command, controller_options, application_array = Daemons::Controller.split_argv(ARGV)
 
 OptionParser.new do |opts|
   opts.banner = "Usage: amqp_import_daemon #{command} [options] application"
@@ -26,12 +26,13 @@ OptionParser.new do |opts|
   end
 end.parse!
 
+application = application_array[0]
 puts "amqp log importer daemon #{command} #{application}"
 
-daemon_options = {:dir_mode => :normal, :dir => pid_file_dir, :backtrace => true, :log_output => true, :multiple => true}
+daemon_options = {:dir_mode => :normal, :dir => pid_file_dir, :backtrace => true, :log_output => true, :multiple => false}
 
-if application.empty?
+if application.nil?
   Daemons.run(script,  daemon_options.merge(:ARGV => [command]))
 else
-  Daemons.run(script, daemon_options.merge(:app_name => "import_amqp_log_#{application.first}", :ARGV => [command, '--', application.first]))
+  Daemons.run(script, daemon_options.merge(:app_name => "import_amqp_log_#{application}", :ARGV => [command, '--', application]))
 end
