@@ -33,5 +33,5 @@ daemon_options = {:dir_mode => :normal, :dir => pid_file_dir, :backtrace => true
 if application.empty?
   Daemons.run(script,  daemon_options.merge(:ARGV => [command]))
 else
-  Daemons.run(script, daemon_options.merge(:app_name => "import_amqp_log_#{application}", :ARGV => [command, '--', application]))
+  Daemons.run(script, daemon_options.merge(:app_name => "import_amqp_log_#{application.first}", :ARGV => [command, '--', application.first]))
 end
