@@ -1,3 +1,3 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller => "logjam/logjam", :action => "index"
+  map.root :controller => "logjam/logjam", :action => "index", :page => "::"
 end
