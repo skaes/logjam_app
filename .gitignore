@@ -9,3 +9,17 @@ public/javascripts/jquery-1.4.2.min.js
 db/schema.rb
 log/*.log
 tmp
+public/images/bg_hover.png
+public/images/bg_selectable.png
+public/images/bg_selected.png
+public/images/debug.png
+public/images/error.png
+public/images/fatal.png
+public/images/info.png
+public/images/unknown.png
+public/images/warn.png
+public/images/zoom.png
+public/images/zoom_out.png
+public/javascripts/jquery.jdpicker.js
+public/javascripts/protovis-d3.2.js
+public/stylesheets/jdpicker.css
