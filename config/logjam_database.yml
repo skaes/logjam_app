@@ -6,3 +6,6 @@ test:
 
 production:
   host: localhost
+
+benchmarking:
+  host: localhost
