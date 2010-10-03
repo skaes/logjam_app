@@ -4,7 +4,7 @@ require 'daemons'
 
 script_dir = File.dirname(__FILE__)
 
-script = File.expand_path(script_dir + '/import_amqp_log')
+script = File.expand_path(script_dir + '/../vendor/plugins/logjam/script/import_amqp_log')
 
 capistrano_install = File.exist?(script_dir + '/../../shared') && File.exist?(script_dir + '/../../current')
 
