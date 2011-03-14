@@ -13,6 +13,7 @@ gem "em-websocket"
 
 group :development do
   gem "wirble"
+  gem "ruby-prof"
 end
 
 group :test do
