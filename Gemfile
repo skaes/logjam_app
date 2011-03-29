@@ -10,6 +10,7 @@ gem "amqp"
 gem "logjam_logger", :git => "git://github.com/skaes/logjam_logger.git"
 gem "json"
 gem "em-websocket"
+gem "time_bandits"
 
 group :development do
   gem "wirble"
