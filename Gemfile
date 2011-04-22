@@ -11,11 +11,18 @@ gem "logjam_logger", :git => "git://github.com/skaes/logjam_logger.git"
 gem "json"
 gem "em-websocket"
 gem "time_bandits"
+# gem "gc_hacks", :path => "#{ENV['HOME']}/src/gc_hacks"
+
+# if you don't put it here, running a rails console in production will complain
+gem "wirble"
 
 group :development do
-  gem "wirble"
   gem "ruby-prof"
-  gem "ruby-debug"
+  if RUBY_VERSION > "1.9"
+    gem "ruby-debug19"
+  else
+    gem "ruby-debug"
+  end
 end
 
 group :test do
