@@ -19,9 +19,3 @@ RAILS_BENCHMARKER = RailsBenchmark.new
 # require 'user'
 # RAILS_BENCHMARKER.session_data = {'account' => User.find_first("name='stefan'")}
 # RAILS_BENCHMARKER.session_key = "my_secret_cookie_name"
-
-RAILS_BENCHMARKER.class_eval <<EVA
-  def establish_test_session(*args); end
-  def update_test_session_data(*args); end
-  def set_session_data(*args); end
-EVA
