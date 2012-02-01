@@ -7,16 +7,12 @@ module Logjam
 
   # Set import_threshold. Requests fast than the threshold will not be stored in mongo.
   # Their performance data is added to the stats, though. Default is 0.
-  # Logjam.import_threshold = 500
+  # Logjam.import_threshold = Rails.env == "development" ? 0 : 750
 
   # Set how many days we keep request details
-  Logjam.request_cleaning_threshold = 28
+  # Logjam.request_cleaning_threshold = 7
 
-  # Make sure to enable matchers appropriate for the log files that will be imported.
-  # The sample log file included with LogJam is in basic time bandit format.
-  # It is ok to have multiple COMPLETED matchers enabled; the first to match will be used.
-  RequestInfo.register_matcher Matchers::PROCESSING
-  RequestInfo.register_matcher Matchers::SESSION_XING
-  RequestInfo.register_matcher Matchers::COMPLETED_RAILS
-  RequestInfo.register_matcher Matchers::FAILSAFE
+  # Set how many days we keep statistics
+  # Logjam.database_cleaning_threshold = 365
+
 end

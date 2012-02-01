@@ -2,17 +2,18 @@ require File.expand_path('../boot', __FILE__)
 
 # require 'rails/all'
 require "action_controller/railtie"
-require "action_mailer/railtie"
-require "active_resource/railtie"
+# require "action_mailer/railtie"
+# require "active_resource/railtie"
 require "rails/test_unit/railtie"
 
+require 'time_bandits'
+require 'logjam_agent'
+require 'logjam_agent/railtie'
+require 'gc_hacks'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 # Bundler.require(:default, Rails.env) if defined?(Bundler)
-require 'time_bandits'
-require 'logjam_logger'
-require 'gc_hacks'
 
 module LogjamApp
   class Application < Rails::Application
@@ -22,6 +23,8 @@ module LogjamApp
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
+    config.logger = LogjamAgent::BufferedLogger.new(config.paths.log.to_a.first)
+    config.logger.formatter = LogjamAgent::SyslogLikeFormatter.new
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.

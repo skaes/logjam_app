@@ -1,16 +1,15 @@
 source :rubygems
 
 gem "rake"
-gem "rails", '~>3.0'
-gem "mongo_ext"
-gem "mongo"
-gem "bson_ext"
+gem "rails", '~> 3.0.0'
+gem "mongo", '~> 1.4.0'
+gem "bson_ext", '~> 1.4.0'
 gem "eventmachine"
-gem "amqp"
-gem "logjam_logger", :git => "git://github.com/skaes/logjam_logger.git"
+gem "amqp", '~> 0.8.0'
+gem "logjam_agent", '~> 0.3.2'
 gem "json"
-gem "em-websocket"
-gem "time_bandits"
+gem "em-websocket", '~> 0.3.5'
+gem "time_bandits", '>= 0.1.1'
 gem "gc_hacks"  # , :path => "#{ENV['HOME']}/src/gc_hacks"
 
 # if you don't put it here, running a rails console in production will complain
@@ -31,5 +30,9 @@ group :development do
 end
 
 group :test do
-  gem "redgreen"
+  gem "turn"
+end
+
+group :deplyoment do
+  gem "capistrano"
 end
