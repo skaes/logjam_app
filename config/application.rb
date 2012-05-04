@@ -6,9 +6,7 @@ require "action_controller/railtie"
 # require "active_resource/railtie"
 require "rails/test_unit/railtie"
 
-require 'time_bandits'
 require 'logjam_agent'
-require 'logjam_agent/railtie'
 require 'gc_hacks'
 
 # If you have a Gemfile, require the gems listed there, including any gems
