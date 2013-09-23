@@ -1,11 +1,19 @@
 development:
-  host: localhost
+  default:
+    host: localhost
+    port: 27017
 
 test:
-  host: localhost
+  default:
+    host: localhost
+    port: 27017
 
 production:
-  host: localhost
+  default:
+    host: localhost
+    port: 27017
 
 benchmarking:
-  host: localhost
+  default:
+    host: localhost
+    port: 27017

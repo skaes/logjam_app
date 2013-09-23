@@ -1,6 +1,8 @@
 # Importer streams
-
 module Logjam
-  stream "logjam-development"
   livestream "development"
+
+  stream "logjam-development" do
+    importer { type :zmq; port 9605 }
+  end
 end
