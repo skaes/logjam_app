@@ -104,7 +104,7 @@ Both methods have their advantages and disadvantages:
 * With ZeroMQ, the application talks directly to the logjam request import daemon(s). Currently this
   doesn't scale as easily as the AMQP transport. This will be changed in the future.
 
-For AMQP, I can recommend using {RabbitMQ}[http://www.rabbitmq.com/].
+For AMQP, I can recommend using [RabbitMQ](http://www.rabbitmq.com/).
 
 ### Configuring Logjam
 
@@ -158,8 +158,8 @@ Coming soon ...
 
 ## Authors
 
-{Stefan Kaes}[http://github.com/skaes] <skaes@railsexpress.de> and
-{David Anderson}[http://github.com/alpinegizmo] <david@alpinegizmo.com>.
+[Stefan Kaes](http://github.com/skaes) <skaes@railsexpress.de> and
+[David Anderson](http://github.com/alpinegizmo) <david@alpinegizmo.com>.
 
 
 ## License
