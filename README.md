@@ -73,7 +73,7 @@ patches. If in doubt, run
     echo 1.9.3-p392-railsexpress > .ruby-version
     echo logjam > .ruby-gemset
     mkdir -p log
-    rake logjam:daemons:install
+    rake logjam:bootstrap
 
 ### Install and start services
 
