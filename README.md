@@ -56,9 +56,6 @@ If you're using rvm, I recommend to install a patched ruby like so:
     rvm install 1.9.3-p392 --patch railsexpress -n railsexpress
     rvm use 1.9.3-p392-railsexpress@logjam
     gem install bundler
-    mkdir logjam_app
-    echo 1.9.3-p392-railsexpress > logjam_app/.ruby-version
-    echo logjam > logjam_app/.ruby-gemset
 
 Note: make sure to have a recent rvm version installed, otherwise it will not have up to date ruby
 patches. If in doubt, run
@@ -73,6 +70,8 @@ patches. If in doubt, run
     git submodule init
     git submodule update
     bundle
+    echo 1.9.3-p392-railsexpress > .ruby-version
+    echo logjam > .ruby-gemset
     mkdir -p log
     rake logjam:daemons:install
 
