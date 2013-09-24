@@ -91,6 +91,11 @@ Run "rails s", then open the browser at <http://localhost:3000/>. You will be gr
 Empty" message.  Reload the page once to get some performance data. Then click around and explore
 the UI while your dataset continues to grow.
 
+### Troubleshooting
+
+If you experience any problems following the steps above, please open a
+[ticket](https://github.com/skaes/logjam_app/issues).
+
 
 ## Monitoring other applications
 
@@ -131,7 +136,7 @@ config/initializers/logjam_streams.rb. Such a declaration looks like this:
 
 Here "app" is the name which will be used by logjam internally and "env" the name of the environment
 (typically "production"). Note that each stream needs a separate port, on which the corresponding
-importer process will listen on (interface 0.0.0.0).
+importer process will listen (interface 0.0.0.0).
 
 For the AMQP transport:
 
