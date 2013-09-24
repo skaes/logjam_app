@@ -1,7 +1,7 @@
-= Logjam
+# Logjam
 
 Logjam is a Ruby on Rails application for finding performance hot spots and errors in web
-applications. It's primary target are Ruby on Rails applications, although it's possible to use it
+applications. Its primary target are Ruby on Rails applications, although it's possible to use it
 with other technologies.
 
 It differs from other Rails monitoring solutions in that is is meant to be hosted in your own
@@ -31,14 +31,14 @@ you how often and when these calls occur.
 Note that some of Logjam's features (e.g. those involving GC and memory data) depend on using a
 specially built version of Ruby (see https://github.com/skaes/rvm-patchsets).
 
-== Quick getting started guide for the impatient developer
+## Quick getting started guide for the impatient developer
 
 A quick way of getting to understand what Logjam can do is to install and run a local development
 version, which monitors itself.
 
 In the following, I assume you're a Rails developer.
 
-=== Install required software packages
+### Install required software packages
 
 * mongodb (see http://www.mongodb.org/downloads)
 * zeromq (see http://zeromq.org/intro:get-the-software)
@@ -57,7 +57,7 @@ If you're using rvm, I recommend to install a patched ruby like so:
     rvm use 1.9.3-railsexpress@logjam
     gem install bundler
 
-=== Clone the git repository and bundle the application
+### Clone the git repository and bundle the application
 
     git clone https://github.com/skaes/logjam_app.git
     cd logjam_app
@@ -66,7 +66,7 @@ If you're using rvm, I recommend to install a patched ruby like so:
     bundle
     rake logjam:daemons:install
 
-=== Install and start services
+### Install and start services
 
 Open a separate shell window and run
 
@@ -76,19 +76,19 @@ foreman will start all background processes which are necessary to enable self m
 gives you errors, e.g. because you have mongodb or memcached already running on your machine,
 comment out the corresponging lines in ./Procfile.
 
-=== Start the application and play
+### Start the application and play
 
 Run "rails s", then open the browser at [http://localhost:3000]. You will be greeted with a "Dataset
 Empty" message.  Reload the page once to get some performance data. Then click around and explore
 the UI while your dataset continues to grow.
 
 
-== Monitoring other applications
+## Monitoring other applications
 
 Unsurprisingly, this requires you to configure Logjam to listen for request information and the
 application to send request data.
 
-=== Transport options
+### Transport options
 
 Logjam supports two different transport methods for sending request information from the application
 to Logjam:
@@ -99,31 +99,34 @@ to Logjam:
 Both methods have their advantages and disadvantages:
 
 * AMQP requires a running message broker which acts as an intermediate, provides buffering and
-  allows the logjam request importers to scale.
+  allows the logjam request importers to scale, but requires supervision.
 
 * With ZeroMQ, the application talks directly to the logjam request import daemon(s). Currently this
-  doesn't scale as easily as the AMQP transport. But this will be changed in the future.
+  doesn't scale as easily as the AMQP transport. This will be changed in the future.
 
 For AMQP, I can recommend using {RabbitMQ}[http://www.rabbitmq.com/].
 
-=== Configuring Logjam
+### Configuring Logjam
 
 Application monitoring is configured through stream declarations in the file
 config/initializers/logjam_streams.rb. Such a declaration looks like this:
 
+````ruby
     stream "app-env" do
       importer do
          type :zmq
          port 9605
       end
     end
+````
 
 Here "app" is the name which will be used by logjam internally and "env" the name of the environment
 (typically "production"). Note that each stream needs a separate port, on which the corresponding
-importer process will listen (on interface 0.0.0.0).
+importer process will listen on (interface 0.0.0.0).
 
 For the AMQP transport:
 
+````ruby
     stream "app-env" do
       importer do
         type  :amqp
@@ -131,15 +134,16 @@ For the AMQP transport:
       end
       workers 3
     end
+````
 
 Here you can specify how many workers will be started by logjam to process request data.
 
 
-=== Instrumenting the application
+### Instrumenting the application
 
 * add the logjam_agent gem to the Gemfile of your application
 * add an initializer for logjam_agent and specify transport method and endpoint
-* add either the amqp gem or the ffi-rzmq gem to the Gemfile (based on which transport you chose)
+* add either the bunny gem or the ffi-rzmq gem to the Gemfile (based on which transport you chose)
 * add an initializer for time_bandits and specify which metrics to track
 
 Have a look at the corresponding files in logjam itself to get an idea on how to proceed.
@@ -147,18 +151,18 @@ Have a look at the corresponding files in logjam itself to get an idea on how to
 Detailed explanation: coming soon ...
 
 
-== Deploying Logjam into production
+## Deploying Logjam into production
 
 Coming soon ...
 
 
-== Authors
+## Authors
 
 {Stefan Kaes}[http://github.com/skaes] <skaes@railsexpress.de> and
 {David Anderson}[http://github.com/alpinegizmo] <david@alpinegizmo.com>.
 
 
-== License
+## License
 
 The MIT License
 
