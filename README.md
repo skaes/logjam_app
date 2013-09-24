@@ -78,7 +78,7 @@ comment out the corresponging lines in ./Procfile.
 
 ### Start the application and play
 
-Run "rails s", then open the browser at http://localhost:3000. You will be greeted with a "Dataset
+Run "rails s", then open the browser at <http://localhost:3000/>. You will be greeted with a "Dataset
 Empty" message.  Reload the page once to get some performance data. Then click around and explore
 the UI while your dataset continues to grow.
 
