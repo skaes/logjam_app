@@ -47,15 +47,24 @@ In the following, I assume you're a Rails developer.
 
 If you're on a Mac and are using MacPorts:
 
-    sudo port install mongodb memcached zmq
+    sudo port install mongodb memcached zmq libffi
 
 I'm sure with Home Brew it's equally simple, but I haven't tried it.
 
 If you're using rvm, I recommend to install a patched ruby like so:
 
-    rvm install 1.9.3 --patch railsexpress -n railsexpress
-    rvm use 1.9.3-railsexpress@logjam
+    rvm install 1.9.3-p392 --patch railsexpress -n railsexpress
+    rvm use 1.9.3-p392-railsexpress@logjam
     gem install bundler
+    mkdir logjam_app
+    echo 1.9.3-p392-railsexpress > logjam_app/.ruby-version
+    echo logjam > logjam_app/.ruby-gemset
+
+Note: make sure to have a recent rvm version installed, otherwise it will not have up to date ruby
+patches. If in doubt, run
+
+    rvm get latest
+
 
 ### Clone the git repository and bundle the application
 
@@ -64,6 +73,7 @@ If you're using rvm, I recommend to install a patched ruby like so:
     git submodule init
     git submodule update
     bundle
+    mkdir -p log
     rake logjam:daemons:install
 
 ### Install and start services
