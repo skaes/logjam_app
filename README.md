@@ -54,7 +54,7 @@ I'm sure with Home Brew it's equally simple, but I haven't tried it.
 If you're using rvm, I recommend to install a patched ruby like so:
 
     rvm install 1.9.3-p392 --patch railsexpress -n railsexpress
-    rvm use 1.9.3-p392-railsexpress@logjam
+    rvm use 1.9.3-p392-railsexpress@logjam --create
     gem install bundler
 
 Note: make sure to have a recent rvm version installed, otherwise it will not have up to date ruby
