@@ -31,7 +31,7 @@ you how often and when these calls occur.
 Note that some of Logjam's features (e.g. those involving GC and memory data) depend on using a
 specially built version of Ruby (see https://github.com/skaes/rvm-patchsets).
 
-## Quick getting started guide for the impatient developer
+## Quick start for the impatient developer
 
 A quick way of getting to understand what Logjam can do is to install and run a local development
 version, which monitors itself.
@@ -73,22 +73,27 @@ patches. If in doubt, run
     echo 1.9.3-p392-railsexpress > .ruby-version
     echo logjam > .ruby-gemset
     mkdir -p log
-    rake logjam:bootstrap
 
-### Install and start services
+### Start the services and initialize the database
 
-Open a separate shell window and run
+Run
+    rake logjam:daemons:install
+to create necessary service definitions under ./service.
 
+Open a separate terminal session and run
     foreman start
-
 foreman will start all background processes which are necessary to enable self monitoring. If this
 gives you errors, e.g. because you have mongodb or memcached already running on your machine,
 comment out the corresponging lines in ./Procfile.
 
+Then go back to the original session and run
+    rake logjam:db:update_known_databases
+to initialize mongodb contents.
+
 ### Start the application and play
 
 Run "rails s", then open the browser at <http://localhost:3000/>. You will be greeted with a "Dataset
-Empty" message.  Reload the page once to get some performance data. Then click around and explore
+Empty" message. Reload the page to get some performance data. Then click around and explore
 the UI while your dataset continues to grow.
 
 ### Troubleshooting
@@ -123,7 +128,7 @@ For AMQP, I can recommend using [RabbitMQ](http://www.rabbitmq.com/).
 ### Configuring Logjam
 
 Application monitoring is configured through stream declarations in the file
-config/initializers/logjam_streams.rb. Such a declaration looks like this:
+./config/initializers/logjam_streams.rb. Such a declaration looks like this:
 
 ````ruby
     stream "app-env" do
