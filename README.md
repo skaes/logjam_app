@@ -77,17 +77,23 @@ patches. If in doubt, run
 ### Start the services and initialize the database
 
 Run
+
     rake logjam:daemons:install
+
 to create necessary service definitions under ./service.
 
 Open a separate terminal session and run
+
     foreman start
+
 foreman will start all background processes which are necessary to enable self monitoring. If this
 gives you errors, e.g. because you have mongodb or memcached already running on your machine,
 comment out the corresponging lines in ./Procfile.
 
 Then go back to the original session and run
+
     rake logjam:db:update_known_databases
+
 to initialize mongodb contents.
 
 ### Start the application and play
