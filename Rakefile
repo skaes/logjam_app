@@ -3,3 +3,9 @@
 
 require_relative 'config/application'
 LogjamApp::Application.load_tasks
+
+desc "update code from the git repository"
+task :update do
+  puts "updating logjam from remote repository"
+  system "git pull && (cd vendor/logjam; git pull origin master)"
+end
