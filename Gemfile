@@ -11,7 +11,7 @@ gem "oj",             '~> 2.1.4'
 # uncomment the following line if you use rabbitmq to send requests from your apps
 # gem "amqp",           '~> 1.0.2'
 
-# uncomment for guaranteed uniqueness of requeut ids
+# uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.1.2'
 
 gem "eventmachine",   '~> 1.0.0'
@@ -19,7 +19,7 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.9.0'
+gem "logjam_agent",   '~> 0.9.1'
 gem "time_bandits",   '~> 0.6.0'
 gem "gc_hacks"
 gem "font-awesome-rails"

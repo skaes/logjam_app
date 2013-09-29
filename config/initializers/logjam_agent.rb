@@ -1,18 +1,19 @@
 module LogjamAgent
+  # Configure the application name (required). Must not contain dots of hyphens.
   self.application_name = "logjam"
-  self.environment_name = Rails.env
-  Forwarders.add(ZMQForwarder.new("logjam", Rails.env, :host => "localhost", :port => 9605))
-  auto_detect_logged_exceptions
 
-  mattr_accessor :forwarding_error_logger
-  mattr_accessor :forwarding_error_log
+  # Configure the environment name (optional). Defaults to Rails.env.
+  # self.environment_name = Rails.env
 
-  self.forwarding_error_log = File.expand_path("#{::Rails.root}/log/logjam_agent_error.log")
-  self.forwarding_error_logger = ::Logger.new(forwarding_error_log)
-  self.forwarding_error_logger.level = ::Logger::ERROR
-  self.forwarding_error_logger.formatter = ::Logger::Formatter.new
+  # Configure request data forwarder for ZeroMQ.
+  add_forwarder(:zmq, :host => "localhost", :port => 9605)
 
-  self.error_handler = lambda do |exception|
-    forwarding_error_logger.error "#{exception.class.name}: #{exception.message}"
-  end
+  # Configure request data forwarder for ZeroMQ.
+  # add_forwarder(:amqp, :host => "message.broker.at.your.org"))
+
+  # Configure ip obfuscation. Defaults to false.
+  self.obfuscate_ips = true
+
+  # Configure cookie obfuscation. Defaults to [/_session\z/]
+  # self.obfuscated_cookies = [/_session\z]/
 end
