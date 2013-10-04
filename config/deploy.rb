@@ -11,6 +11,7 @@ set :use_sudo,            false
 role :app,    logjam_host
 role :web,    logjam_host
 role :worker, logjam_host
+role :cron,   logjam_host
 
 # repository deploy parameters
 set :scm,                   "git"
@@ -34,6 +35,10 @@ set :bundle_without,  [:development, :test, :deployment]
 
 require 'bundler/capistrano'
 require 'capistrano_colors'
+
+######### cronjobs ##############
+set :whenever_command, "bundle exec whenever"
+require "whenever/capistrano"
 
 ##################################################################
 # Overwritten Capistrano Tasks
