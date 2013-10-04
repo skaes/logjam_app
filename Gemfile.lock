@@ -71,7 +71,7 @@ GEM
     hike (1.2.3)
     http_parser.rb (0.5.3)
     i18n (0.6.5)
-    logjam_agent (0.9.1)
+    logjam_agent (0.9.2)
       activesupport
       time_bandits (>= 0.6.0)
     mail (2.5.4)
@@ -159,7 +159,7 @@ DEPENDENCIES
   font-awesome-rails
   foreman
   gc_hacks
-  logjam_agent (~> 0.9.1)
+  logjam_agent (~> 0.9.2)
   mongo (~> 1.9.1)
   oj (~> 2.1.4)
   rails (~> 4.0.0)
