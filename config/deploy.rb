@@ -29,6 +29,9 @@ set :default_environment, {
   "SVWAIT"             => 15
 }
 
+# don't normalize asset timestamps, as we're using the asset pipeline'
+set :normalize_asset_timestamps, false
+
 ######### Bundler Settings ############
 set :bundle_dir,      File.join(fetch(:shared_path), 'bundle')
 set :bundle_without,  [:development, :test, :deployment]
