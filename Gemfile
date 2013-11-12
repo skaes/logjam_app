@@ -6,10 +6,10 @@ gem "dalli",          '~> 2.6.4'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.1.4'
+gem "oj",             '~> 2.1.7'
 
 # uncomment the following line if you use rabbitmq to send requests from your apps
-# gem "amqp",           '~> 1.0.2'
+# gem "amqp",           '~> 1.1.1'
 
 # uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.1.2'
@@ -19,7 +19,7 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.9.2'
+gem "logjam_agent",   '~> 0.9.3'
 gem "time_bandits",   '~> 0.6.0'
 gem "gc_hacks"
 gem "font-awesome-rails"
