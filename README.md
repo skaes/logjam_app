@@ -51,6 +51,10 @@ If you're on a Mac and are using MacPorts:
 
 I'm sure with Home Brew it's equally simple, but I haven't tried it.
 
+In either case, you might need to create the mongodb data directory:
+
+    sudo mkdir -p /data/db
+
 If you're using rvm, I recommend to install a patched ruby like so:
 
     rvm install 1.9.3-p392 --patch railsexpress -n railsexpress
