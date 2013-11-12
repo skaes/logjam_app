@@ -19,7 +19,7 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.9.3'
+gem "logjam_agent",   '~> 0.9.4'
 gem "time_bandits",   '~> 0.6.0'
 gem "gc_hacks"
 gem "font-awesome-rails"

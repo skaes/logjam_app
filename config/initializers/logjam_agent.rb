@@ -16,4 +16,9 @@ module LogjamAgent
 
   # Configure cookie obfuscation. Defaults to [/_session\z/]
   # self.obfuscated_cookies = [/_session\z]/
+
+  # Configure asset request logging and forwarding. Defaults to ignore
+  # asset requests in development mode. Set this to false if you need
+  # to debug asset request handling.
+  # self.ignore_asset_requests = Rails.env.development?
 end
