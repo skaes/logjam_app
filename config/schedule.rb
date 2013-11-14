@@ -29,3 +29,7 @@ job_type :rake,  "cd :path && RAILS_ENV=:environment bundle exec rake :task >> :
 every :day, :at => '01:15', :roles => [:cron] do
   rake 'logjam:db:clean', :log => 'log/database_cleanup.log'
 end
+
+every 1.minute, :roles => [:worker] do
+  rake 'logjam:daemons:list_orphans', :log => 'log/orphaned_workers.log'
+end
