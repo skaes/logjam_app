@@ -40,7 +40,7 @@ require 'bundler/capistrano'
 require 'capistrano_colors'
 
 ######### cronjobs ##############
-set :whenever_roles, [:cron]
+set :whenever_roles, [:cron, :worker]
 set :whenever_command, "bundle exec whenever"
 require "whenever/capistrano"
 
