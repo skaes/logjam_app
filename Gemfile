@@ -6,7 +6,7 @@ gem "dalli",          '~> 2.6.4'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.2.3'
+gem "oj",             '~> 2.3.0'
 
 # uncomment the following line if you use rabbitmq to send requests from your apps
 # gem "amqp",           '~> 1.1.1'
