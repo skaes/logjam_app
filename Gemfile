@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rake",           '~> 10.1.0'
-gem "rails",          '~> 4.0.0'
+gem "rails",          '~> 4.0.2'
 gem "dalli",          '~> 2.6.4'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
