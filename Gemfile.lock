@@ -91,7 +91,7 @@ GEM
     net-ssh (2.7.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    oj (2.4.1)
+    oj (2.4.2)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
