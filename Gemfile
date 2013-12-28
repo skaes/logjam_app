@@ -12,7 +12,7 @@ gem "oj",             '~> 2.5.1'
 # gem "amqp",           '~> 1.1.8'
 
 # uncomment for guaranteed uniqueness of request ids
-# gem "uuid4r",         '~> 0.1.2'
+# gem "uuid4r",         '~> 0.2.0'
 
 gem "eventmachine",   '~> 1.0.0'
 gem "ffi",            '~> 1.9.0'
@@ -20,7 +20,7 @@ gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
 gem "em-websocket",   '~> 0.5.0'
 gem "logjam_agent",   '~> 0.9.4'
-gem "time_bandits",   '~> 0.6.0'
+gem "time_bandits",   '~> 0.6.1'
 gem "gc_hacks"
 gem "font-awesome-rails"
 gem "whenever", :require => false
@@ -29,8 +29,9 @@ gem "whenever", :require => false
 gem "wirble"
 
 group :development do
-  gem "debugger"
   gem "foreman", :require => false
+  gem "byebug"
+  # gem "passenger" , "~> 4.0.20"
 
   # uncomment the following lines if you want to run railsbench
   # gem railsbench
