@@ -46,7 +46,7 @@ group :test do
 end
 
 group :deployment do
-  gem "capistrano"
+  gem "capistrano", '~> 2.15.5'
   gem "capistrano_colors"
 end
 
