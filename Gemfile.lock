@@ -27,6 +27,10 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    amq-protocol (1.9.2)
+    amqp (1.1.8)
+      amq-protocol (>= 1.9.2)
+      eventmachine
     ansi (1.4.3)
     arel (5.0.0)
     bson (1.9.2)
@@ -152,6 +156,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amqp (~> 1.1.8)
   bson (~> 1.9.1)
   bson_ext (~> 1.9.1)
   byebug

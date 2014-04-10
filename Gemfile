@@ -7,9 +7,7 @@ gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
 gem "oj",             '~> 2.7.2'
-
-# uncomment the following line if you use rabbitmq to send requests from your apps
-# gem "amqp",           '~> 1.1.8'
+gem "amqp",           '~> 1.1.8'
 
 # uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.2.0'
