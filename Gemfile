@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
-gem "rake",           '~> 10.1.0'
-gem "rails",          '~> 4.0.3'
+gem "rake",           '~> 10.2.2'
+gem "rails",          '~> 4.1.0'
 gem "dalli",          '~> 2.6.4'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.5.1'
+gem "oj",             '~> 2.7.2'
 
 # uncomment the following line if you use rabbitmq to send requests from your apps
 # gem "amqp",           '~> 1.1.8'
@@ -19,8 +19,8 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.9.4'
-gem "time_bandits",   '~> 0.6.1'
+gem "logjam_agent",   '~> 0.9.8'  #, :path => "~/src/logjam_agent"
+gem "time_bandits",   '~> 0.6.5'  #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
 gem "whenever", :require => false
