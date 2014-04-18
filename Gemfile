@@ -1,18 +1,18 @@
 source "https://rubygems.org"
 
-gem "rake",           '~> 10.2.2'
+gem "rake",           '~> 10.3.1'
 gem "rails",          '~> 4.1.0'
 gem "dalli",          '~> 2.6.4'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.7.2'
-gem "amqp",           '~> 1.1.8'
+gem "oj",             '~> 2.5.5'
+gem "amqp",           '~> 1.3.0'
 
 # uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.2.0'
 
-gem "eventmachine",   '~> 1.0.0'
+gem "eventmachine",   '~> 1.0.3'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 1.0.0'
 gem "em-zeromq",      '~> 0.4.2'
@@ -40,7 +40,7 @@ group :development do
 end
 
 group :test do
-  gem "turn"
+  # gem "turn"
 end
 
 group :deployment do
