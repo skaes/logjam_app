@@ -10,3 +10,5 @@ plus.png
 .rvmrc
 .ruby-version
 .ruby-gemset
+.cache_gems
+*.patch
