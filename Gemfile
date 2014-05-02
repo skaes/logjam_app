@@ -2,11 +2,11 @@ source "https://rubygems.org"
 
 gem "rake",           '~> 10.3.1'
 gem "rails",          '~> 4.1.0'
-gem "dalli",          '~> 2.6.4'
+gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.5.5'
+gem "oj",             '~> 2.9.0'
 gem "amqp",           '~> 1.3.0'
 
 # uncomment for guaranteed uniqueness of request ids
@@ -14,8 +14,8 @@ gem "amqp",           '~> 1.3.0'
 
 gem "eventmachine",   '~> 1.0.3'
 gem "ffi",            '~> 1.9.0'
-gem "ffi-rzmq",       '~> 1.0.0'
-gem "em-zeromq",      '~> 0.4.2'
+gem "ffi-rzmq",       '~> 2.0.1'
+gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
 gem "logjam_agent",   '~> 0.9.8'  #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.6.5'  #, :path => "~/src/time_bandits"
