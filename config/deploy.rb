@@ -107,7 +107,12 @@ namespace :daemons do
 
   desc "Restart logjam import daemons"
   task :restart_importers, :roles => :worker do
-    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=importer"
+    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/importer"
+  end
+
+  desc "Restart logjam live stream"
+  task :restart_live_stream, :roles => :worker do
+    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/live-stream"
   end
 
   desc "Show logjam daemon status"
