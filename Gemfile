@@ -6,8 +6,8 @@ gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.9.0'
-gem "amqp",           '~> 1.4.1'
+gem "oj",             '~> 2.10.2'
+gem "amqp",           '~> 1.5.0'
 
 # uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.2.0'
@@ -17,7 +17,7 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.10.0'  #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '~> 0.11.0'  #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.7.0'   #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
@@ -53,7 +53,4 @@ gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
