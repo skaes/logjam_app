@@ -40,3 +40,17 @@ heap_resources:
 - heap_size: '#000000'
 - heap_growth: '#567757'
 - live_data_set_size: '#352378'
+
+frontend_resources:
+- connect_time: '#bcbd22'        # connectEnd
+- response_time: '#00aaaa'       # responseEnd - connectEnd
+- transfer_time: '#00aa00'       # domContentLoadedEventStart - responseEnd
+- ready_time: '#ff0000'          # domContentLoadedEventEnd - domContentLoadedEventStart
+- processing_time: '#d34583'     # loadEventEnd - domContentLoadedEventEnd
+- page_time: '#000000'           # loadEventEnd
+- ajax_time: '#000000'
+
+dom_resources:
+- html_nodes: '#bcbd22'
+- script_nodes: '#00aaaa'
+- style_nodes: '#00bb11'
