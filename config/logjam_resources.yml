@@ -43,12 +43,11 @@ heap_resources:
 
 frontend_resources:
 - ajax_time: '#00aa33'
-- page_time: '#ff00ff'           # loadEventEnd
-- processing_time: '#ffa500'     # loadEventEnd - domContentLoadedEventEnd
-- ready_time: '#bcbd22'          # domContentLoadedEventEnd - domContentLoadedEventStart
-- transfer_time: '#00aaaa'       # domContentLoadedEventStart - responseEnd
-- response_time: '#0022ff'       # responseEnd - connectEnd
-- connect_time: '#ff0000'        # connectEnd
+- load_time: '#ff00ff'
+- processing_time: '#ffa500'
+- response_time: '#0022ff'
+- request_time: '#00aaaa'
+- connect_time: '#ff0000'
 
 dom_resources:
 - style_nodes: '#00bb11'
