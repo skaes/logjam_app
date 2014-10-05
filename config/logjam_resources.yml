@@ -42,12 +42,14 @@ heap_resources:
 - live_data_set_size: '#352378'
 
 frontend_resources:
-- ajax_time: '#00aa33'
-- load_time: '#ff00ff'
-- processing_time: '#ffa500'
-- response_time: '#0022ff'
-- request_time: '#00aaaa'
+- page_time: '#000000'
+- ajax_time: '#000000'
+- load_time: '#352378'
+- processing_time: '#b3d1f9'
+- response_time: '#d34583'
+- request_time: '#bcbd22'
 - connect_time: '#ff0000'
+- frontend_time: '#000000'
 
 dom_resources:
 - style_nodes: '#00bb11'
