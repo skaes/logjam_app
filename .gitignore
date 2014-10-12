@@ -12,3 +12,6 @@ plus.png
 .ruby-gemset
 .cache_gems
 *.patch
+*#
+*~
+crap
