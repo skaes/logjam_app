@@ -16,7 +16,7 @@ role :cron,   logjam_host
 # repository deploy parameters
 set :scm,                   "git"
 set :repository,            "git://github.com/skaes/logjam_app.git"
-set :branch,                "redesign"
+set :branch,                "master"
 set :git_enable_submodules, true
 set :deploy_via,            :remote_cache
 
