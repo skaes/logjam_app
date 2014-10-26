@@ -24,7 +24,7 @@ module Logjam
   # config for C importer #
   # --------------------- #
 
-  # self.devices = %w[tcp://localhost:9606]
+  self.devices = %w[tcp://localhost:9606]
 
   stream "logjam-development"
   stream "logjam-production"
