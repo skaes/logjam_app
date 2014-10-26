@@ -12,13 +12,13 @@ module Logjam
   # config for ruby importers #
   # ------------------------- #
 
-  stream "logjam-development" do
-    importer { type :zmq; port 9605 }
-  end
+  # stream "logjam-development" do
+  #   importer { type :zmq; port 9605 }
+  # end
 
-  stream "logjam-production" do
-    importer { type :zmq; port 9605 }
-  end
+  # stream "logjam-production" do
+  #   importer { type :zmq; port 9605 }
+  # end
 
   # --------------------- #
   # config for C importer #
@@ -26,7 +26,7 @@ module Logjam
 
   # self.devices = %w[tcp://localhost:9606]
 
-  # stream "logjam-development"
-  # stream "logjam-production"
+  stream "logjam-development"
+  stream "logjam-production"
 
 end
