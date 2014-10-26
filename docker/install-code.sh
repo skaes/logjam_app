@@ -1,4 +1,6 @@
-mkdir /home/logjam
+#!/bin/bash
+set -e
+
 cd /home/logjam
 git clone https://github.com/skaes/logjam_app.git
 cd logjam_app

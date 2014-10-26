@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 mkdir -p /data/db
 mkdir -p /etc/service/mongodb/log/logs
