@@ -12,6 +12,7 @@ role :app,    logjam_host
 role :web,    logjam_host
 role :worker, logjam_host
 role :cron,   logjam_host
+role :config, logjam_host
 
 # repository deploy parameters
 set :scm,                   "git"
@@ -22,6 +23,7 @@ set :deploy_via,            :remote_cache
 
 # set default environment variables
 set :default_environment, {
+  "PATH"               => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
   "RAILS_ENV"          => "production",
   "LOGJAM_DIR"         => current_path,
   "LOGJAM_SERVICE_DIR" => "#{shared_path}/service",
@@ -59,12 +61,12 @@ namespace :deploy do
   desc <<-DESC
   Symlink sockets directory.
   DESC
-  task :importer_sockets do
+  task :importer_sockets, :except => {:no_release => true} do
     run "ln -nsf #{shared_path}/sockets #{latest_release}/tmp/sockets"
   end
 
   desc <<-DESC
-  Uodate known databases.
+  Update known databases.
   DESC
   task :update_known_databases, :roles => :app do
     run "cd #{latest_release}; bundle exec rake logjam:db:update_known_databases"
@@ -74,6 +76,11 @@ namespace :deploy do
   task :cold do
     update
     start
+  end
+
+  task :config, :roles => :config do
+    device_config = `bundle exec rails runner -e production 'Logjam::Cimporter.new.generate_config'`
+    put device_config, "/home/logjam/logjam.conf"
   end
 end
 
@@ -128,6 +135,7 @@ end
 after 'deploy:update_code' do
   deploy.importer_sockets
   deploy.update_known_databases
+  deploy.config
 end
 
 after 'deploy' do

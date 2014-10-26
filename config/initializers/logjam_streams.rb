@@ -1,8 +1,16 @@
 # logjam importer streams
 # developent streams are skipped in production
 module Logjam
+  # ---------------------------- #
+  # live performance data stream #
+  # ---------------------------- #
+
   livestream "development"
   livestream "production"
+
+  # ------------------------- #
+  # config for ruby importers #
+  # ------------------------- #
 
   stream "logjam-development" do
     importer { type :zmq; port 9605 }
@@ -11,4 +19,14 @@ module Logjam
   stream "logjam-production" do
     importer { type :zmq; port 9605 }
   end
+
+  # --------------------- #
+  # config for C importer #
+  # --------------------- #
+
+  # self.devices = %w[tcp://localhost:9606]
+
+  # stream "logjam-development"
+  # stream "logjam-production"
+
 end
