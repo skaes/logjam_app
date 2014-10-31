@@ -112,9 +112,9 @@ namespace :daemons do
     run_in_current_path "bundle exec rake logjam:daemons:restart"
   end
 
-  desc "Restart logjam import daemons"
-  task :restart_importers, :roles => :worker do
-    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/importer"
+  desc "Restart logjam import daemon"
+  task :restart_importer, :roles => :worker do
+    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/cimporter"
   end
 
   desc "Restart logjam live stream"
@@ -142,7 +142,6 @@ after 'deploy' do
   deploy.cleanup
   deploy.restart
   daemons.install
-  daemons.restart_importers
 end
 
 after 'deploy:setup' do
