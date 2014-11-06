@@ -108,8 +108,8 @@ the UI while your dataset continues to grow.
 
 ### Troubleshooting
 
-If you experience any problems following the steps above, please open a
-[ticket](https://github.com/skaes/logjam_app/issues).
+If you experience any problems following the steps above,
+[please open a ticket](https://github.com/skaes/logjam_core/issues).
 
 
 ## Monitoring other applications
@@ -184,10 +184,6 @@ Detailed explanation: coming soon ...
 
 Coming soon ...
 
-
-## Reporting Issues
-
-Please use the [issue tracker for logjam_core](https://github.com/skaes/logjam_core/issues) to report issues.
 
 ## Authors
 
