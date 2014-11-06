@@ -185,10 +185,14 @@ Detailed explanation: coming soon ...
 Coming soon ...
 
 
+## Reporting Issues
+
+Please use the [issue tracker for logjam_core](https://github.com/skaes/logjam_core/issues) to report issues.
+
 ## Authors
 
-[Stefan Kaes](http://github.com/skaes) (<skaes@railsexpress.de>) and
-[David Anderson](http://github.com/alpinegizmo) (<david@alpinegizmo.com>).
+[Stefan Kaes](https://github.com/skaes) (<skaes@railsexpress.de>) and
+[David Anderson](https://github.com/alpinegizmo) (<david@alpinegizmo.com>).
 
 
 ## License
