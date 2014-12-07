@@ -8,7 +8,7 @@ module Logjam
   self.request_cleaning_threshold = 7
 
   # Set how many days we keep statistics around.
-  self.database_cleaning_threshold = 14
+  self.database_cleaning_threshold = 7
 
   # Set how often accumulated stats are flushed to the database.
   # This setting also determines the stream update interval
