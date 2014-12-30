@@ -17,7 +17,7 @@ role :config, logjam_host
 # repository deploy parameters
 set :scm,                   "git"
 set :repository,            "git://github.com/skaes/logjam_app.git"
-set :branch,                "master"
+set :branch,                "rails42"
 set :git_enable_submodules, true
 set :deploy_via,            :remote_cache
 
