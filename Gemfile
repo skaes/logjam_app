@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "rake",           '~> 10.3.1'
-gem "rails",          '~> 4.1.8'
+gem "rake",           '~> 10.4.2'
+gem "rails",          '~> 4.2.0'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
@@ -12,13 +12,13 @@ gem "amqp",           '~> 1.5.0'
 # uncomment for guaranteed uniqueness of request ids
 # gem "uuid4r",         '~> 0.2.0'
 
-gem "eventmachine",   '~> 1.0.3'
+gem "eventmachine",   '~> 1.0.4'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.12.0'  #, :path => "~/src/logjam_agent"
-gem "time_bandits",   '~> 0.7.0'   #, :path => "~/src/time_bandits"
+gem "logjam_agent",   '~> 0.12.1'  #, :path => "~/src/logjam_agent"
+gem "time_bandits",   '~> 0.7.3'   #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
 gem "whenever", :require => false
@@ -49,7 +49,7 @@ group :deployment do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

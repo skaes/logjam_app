@@ -1,4 +1,6 @@
 LogjamApp::Application.configure do
+  config.active_support.test_order = :random
+
   # Settings specified here will take precedence over those in config/application.rb
   config.eager_load = false
 
