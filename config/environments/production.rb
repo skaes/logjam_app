@@ -1,4 +1,6 @@
 LogjamApp::Application.configure do
+  config.log_level = :info
+
   # Settings specified here will take precedence over those in config/application.rb
   config.eager_load = true
 
@@ -33,7 +35,7 @@ LogjamApp::Application.configure do
 
   # Disable Rails's static asset server
   # In production, Apache or nginx will already do this
-  config.serve_static_assets = false unless defined?(WEBrick)
+  config.serve_static_files = false unless defined?(WEBrick)
 
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
