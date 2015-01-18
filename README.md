@@ -195,7 +195,7 @@ Coming soon ...
 
 Older versions of this code were MIT licensed. The current license version is GPLv3.
 
-Copyright (c) 2009-2014 Stefan Kaes
+Copyright (c) 2009-2015 Stefan Kaes
 
 Copyright (c) 2009 David Anderson
 
