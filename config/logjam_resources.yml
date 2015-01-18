@@ -6,6 +6,7 @@
 ---
 time_resources:
 - gc_time: '#000000'
+- wait_time: '#1e90ff'
 - other_time: '#b3d1f9'
 - memcache_time: '#ffa500'
 - redis_time: '#a41a11'
