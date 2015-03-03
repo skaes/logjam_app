@@ -2,13 +2,13 @@ module Logjam
   # Set the import threshold (ms). Requests with a response time lower
   # than the threshold will not be stored in mongo. Their performance
   # data is added to the stats, though.
-  self.import_threshold = Rails.env.development? ? 0 : 750
+  self.import_threshold = Rails.env.development? ? 0 : 500
 
   # Set how many days we keep request details stored in mongo.
   self.request_cleaning_threshold = 7
 
   # Set how many days we keep statistics around.
-  self.database_cleaning_threshold = 14
+  self.database_cleaning_threshold = 28
 
   # Set how often accumulated stats are flushed to the database.
   # This setting also determines the stream update interval
