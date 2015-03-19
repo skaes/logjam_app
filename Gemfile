@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "rake",           '~> 10.4.2'
-gem "rails",          '~> 4.2.0'
+gem "rails",          '~> 4.2.1'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
@@ -53,4 +53,3 @@ gem 'sass-rails', '~> 5.0.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
