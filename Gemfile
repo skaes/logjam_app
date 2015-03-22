@@ -6,7 +6,7 @@ gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 1.9.1'
 gem "bson",           '~> 1.9.1'
 gem "bson_ext",       '~> 1.9.1'
-gem "oj",             '~> 2.11.1'
+gem "oj",             '~> 2.12.1'
 gem "amqp",           '~> 1.5.0'
 
 # uncomment for guaranteed uniqueness of request ids
