@@ -51,7 +51,8 @@ frontend_resources:
 - processing_time: '#b3d1f9'
 - response_time: '#d34583'
 - request_time: '#bcbd22'
-- connect_time: '#ff0000'
+- connect_time: '#ff4c4c'
+- dom_interactive: '#361be5'
 - frontend_time: '#000000'
 
 dom_resources:
