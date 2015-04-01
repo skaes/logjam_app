@@ -3,9 +3,9 @@ source "https://rubygems.org"
 gem "rake",           '~> 10.4.2'
 gem "rails",          '~> 4.2.1'
 gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 1.9.1'
-gem "bson",           '~> 1.9.1'
-gem "bson_ext",       '~> 1.9.1'
+gem "mongo",          '~> 1.12.1'
+gem "bson",           '~> 1.12.1'
+gem "bson_ext",       '~> 1.12.1'
 gem "oj",             '~> 2.12.1'
 gem "amqp",           '~> 1.5.0'
 
