@@ -84,7 +84,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.2)
-    logjam_agent (0.13.0)
+    logjam_agent (0.13.1)
       activesupport
       time_bandits (>= 0.6.0)
     loofah (2.0.1)
@@ -93,7 +93,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
     mini_portile (0.6.2)
-    minitest (5.5.1)
+    minitest (5.6.0)
     mongo (1.12.1)
       bson (= 1.12.1)
     multi_json (1.11.0)
@@ -186,7 +186,7 @@ DEPENDENCIES
   font-awesome-rails
   foreman
   gc_hacks
-  logjam_agent (~> 0.13.0)
+  logjam_agent (~> 0.13.1)
   mongo (~> 1.12.1)
   oj (~> 2.12.1)
   rails (~> 4.2.1)
