@@ -42,7 +42,7 @@ echo '#!/bin/bash -l' >/etc/service/rails/run
 echo 'sv start mongodb || exit 1' >>/etc/service/rails/run
 echo 'exec 2>&1' >>/etc/service/rails/run
 echo 'cd /home/logjam/logjam_app' >>/etc/service/rails/run
-echo 'exec rails s' >>/etc/service/rails/run
+echo 'exec rails s --binding 0.0.0.0' >>/etc/service/rails/run
 chmod 755 /etc/service/rails/run
 
 cd /home/logjam/logjam_app

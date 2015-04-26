@@ -1,9 +1,9 @@
 # VERSION         0.1
-# DOCKER-VERSION  1.2.0
+# DOCKER-VERSION  1.6.0
 # AUTHORS:        Stefan Kaes <skaes@railsexpress.de>, Jochen Kramer <freetwix@web.de>
 # DESCRIPTION:    logjam demo
 #
-# TO_BUILD:            docker build -t=stkaes/logjamdemo
+# TO_BUILD:            docker build -t=stkaes/logjamdemo .
 # TO_RUN_INTERACTIVE:  docker run --rm -i -t -p 3000:3000 -p 8080:8080 stkaes/logjamdemo
 # ----------------------------
 FROM ubuntu:14.04
@@ -36,7 +36,7 @@ RUN apt-get install -y \
 # ruby
 # ----------------------------
 ADD ./docker/install-ruby.sh /docker/install-ruby.sh
-RUN /bin/bash -l -c /docker/install-ruby.sh
+RUN /bin/bash -l -c '/docker/install-ruby.sh ruby-2.2.2-p95'
 
 # ----------------------------
 # services
@@ -47,9 +47,6 @@ RUN apt-get -y install mongodb memcached; apt-get clean
 # ----------------------------
 # logjam
 # ----------------------------
-ADD ./docker/install-dependencies.sh /docker/install-dependencies.sh
-RUN /bin/bash -l -c /docker/install-dependencies.sh
-
 ADD ./docker/install-logjam-tools.sh /docker/install-logjam-tools.sh
 RUN /bin/bash -l -c /docker/install-logjam-tools.sh
 
@@ -69,5 +66,4 @@ ADD ./docker/Procfile /home/logjam/logjam_app/Procfile
 ADD ./docker/startapp.sh /docker/startapp.sh
 CMD /docker/startapp.sh
 
-EXPOSE  3000
-EXPOSE  8080
+EXPOSE  3000 8080
