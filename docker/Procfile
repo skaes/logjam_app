@@ -1,5 +1,0 @@
-mongodb: runsv /etc/service/mongodb
-memcached: runsv /etc/service/memcached
-importer: runsv /home/logjam/logjam_app/service/importer-logjam-development
-livestream: runsv /home/logjam/logjam_app/service/live-stream-development
-web: runsv /etc/service/rails
