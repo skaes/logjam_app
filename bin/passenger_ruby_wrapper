@@ -1,16 +1,13 @@
 #!/bin/bash
 
-ruby_version=`/usr/local/bin/ruby -e 'puts RUBY_VERSION'`
-if [ $ruby_version == "2.1.0" ]; then
-  export RUBY_GC_HEAP_INIT_SLOTS=500000
-  export RUBY_GC_HEAP_FREE_SLOTS=200000
-  export RUBY_GC_MALLOC_LIMIT=500000000
+if [ -x /opt/logjam/bin/ruby ]; then
+    ruby=/opt/logjam/bin/ruby
 else
-  export RUBY_HEAP_MIN_SLOTS=500000
-  export RUBY_HEAP_SLOTS_INCREMENT=250000
-  export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-  export RUBY_GC_MALLOC_LIMIT=500000000
-  export RUBY_HEAP_FREE_MIN=200000
+    ruby=/usr/local/bin/ruby
 fi
 
-exec /usr/local/bin/ruby "$@"
+export RUBY_GC_HEAP_INIT_SLOTS=500000
+export RUBY_GC_HEAP_FREE_SLOTS=200000
+export RUBY_GC_MALLOC_LIMIT=500000000
+
+exec $ruby "$@"
