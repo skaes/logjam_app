@@ -1,19 +1,19 @@
 development:
   default:
-    host: localhost
+    host: <%= ENV["LOGJAM_DEVELOPMENT_DB"] || "localhost" %>
     port: 27017
 
 test:
   default:
-    host: localhost
+    host: <%= ENV["LOGJAM_TEST_DB"] || "localhost" %>
     port: 27017
 
 production:
   default:
-    host: localhost
+    host: <%= ENV["LOGJAM_PRODUCTION_DB"] || "localhost" %>
     port: 27017
 
 benchmarking:
   default:
-    host: localhost
+    host: <%= ENV["LOGJAM_DEVELOPMENT_DB"] || "localhost" %>
     port: 27017
