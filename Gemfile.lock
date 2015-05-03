@@ -180,7 +180,7 @@ DEPENDENCIES
   dalli (~> 2.7.0)
   em-websocket (~> 0.5.0)
   em-zeromq (~> 0.5.0)
-  eventmachine (~> 1.0.4)
+  eventmachine (~> 1.0.7)
   ffi (~> 1.9.0)
   ffi-rzmq (~> 2.0.1)
   font-awesome-rails
