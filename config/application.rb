@@ -65,7 +65,9 @@ module LogjamApp
     config.assets.version = '1.0'
 
     # configure the cache store (uses dalli)
-    config.cache_store = :mem_cache_store, "localhost"
+    memcache_host = (ENV['LOGJAM_MEMCACHE_HOST'] || ENV['LOGJAMCACHE_NAME'] || 'localhost').split('/').last
+    memcache_port = (ENV['LOGJAM_MEMCACHE_PORT'] || ENV['LOGJAMCACHE_PORT_11211_TCP_PORT'] || 11211).to_i
+    config.cache_store = :mem_cache_store, "#{memcache_host}:#{memcache_port}"
 
     # wire logger for cache operations
     config.after_initialize { Rails.cache.logger = Rails.logger }
