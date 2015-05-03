@@ -1,19 +1,19 @@
 development:
   default:
-    host: <%= ENV["LOGJAM_DEVELOPMENT_DB"] || "localhost" %>
-    port: 27017
+    host: <%= (ENV['LOGJAM_DEVELOPMENT_DB'] || ENV['LOGJAMDB_NAME'] || 'localhost').split('/').last %>
+    port: <%= (ENV['LOGJAMDB_PORT_27017_TCP_PORT'] || 27017).to_i %>
 
 test:
   default:
-    host: <%= ENV["LOGJAM_TEST_DB"] || "localhost" %>
-    port: 27017
+    host: <%= (ENV['LOGJAM_TEST_DB'] || ENV['LOGJAMDB_NAME'] || 'localhost').split('/').last %>
+    port: <%= (ENV['LOGJAMDB_PORT_27017_TCP_PORT'] || 27017).to_i %>
 
 production:
   default:
-    host: <%= ENV["LOGJAM_PRODUCTION_DB"] || "localhost" %>
-    port: 27017
+    host: <%= (ENV['LOGJAM_PRODUCTION_DB'] || ENV['LOGJAMDB_NAME'] || 'localhost').split('/').last %>
+    port: <%= (ENV['LOGJAMDB_PORT_27017_TCP_PORT'] || 27017).to_i %>
 
 benchmarking:
   default:
-    host: <%= ENV["LOGJAM_DEVELOPMENT_DB"] || "localhost" %>
-    port: 27017
+    host: <%= (ENV['LOGJAM_BENCHMARKING_DB']  || ENV['LOGJAMDB_NAME'] || 'localhost').split('/').last %>
+    port: <%= (ENV['LOGJAMDB_PORT_27017_TCP_PORT'] || 27017).to_i %>
