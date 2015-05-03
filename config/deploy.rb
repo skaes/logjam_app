@@ -23,8 +23,10 @@ set :deploy_via,            :remote_cache
 
 # set default environment variables
 set :default_environment, {
-  "PATH"               => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+  "PATH"               => "/opt/logjam/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
   "RAILS_ENV"          => "production",
+  "LOGJAM_USER"        => user,
+  "LOGJAM_ERROR_MAIL"  => ENV['LOGJAM_ERROR_MAIL'],
   "LOGJAM_DIR"         => current_path,
   "LOGJAM_SERVICE_DIR" => "#{shared_path}/service",
   "RESTART_DELAY"      => 10,

@@ -19,8 +19,8 @@
 
 # Learn more: http://github.com/javan/whenever
 
-env :MAILTO, "skaes@railsexpress.de"
-env :PATH,   "/usr/local/bin:/usr/bin:/bin"
+env :MAILTO, ENV['LOGJAM_ERROR_MAIL'] || ENV['LOGJAM_USER'] || "logjam"
+env :PATH, ENV['PATH']
 
 # The complex redirection syntax here sends stdout and stderr to the log file,
 # but also sends stderr to the console so that an email is sent when an error occurs
