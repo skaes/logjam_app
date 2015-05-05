@@ -81,7 +81,7 @@ namespace :deploy do
   end
 
   task :config, :roles => :config do
-    device_config = `bundle exec rails runner -e production 'Logjam::Cimporter.new.generate_config'`
+    device_config = `bundle exec rails runner -e production 'Logjam::Importer.new.generate_config'`
     put device_config, "/home/logjam/logjam.conf"
   end
 end
@@ -116,7 +116,7 @@ namespace :daemons do
 
   desc "Restart logjam import daemon"
   task :restart_importer, :roles => :worker do
-    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/cimporter"
+    run_in_current_path "bundle exec rake logjam:daemons:restart DAEMON_MATCH=/importer"
   end
 
   desc "Restart logjam live stream"

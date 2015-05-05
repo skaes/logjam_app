@@ -1,5 +1,6 @@
-# logjam importer streams
-# developent streams are skipped in production
+# logjam data streams. developent streams are skipped when deploying
+# to production.
+
 module Logjam
 
   # ----------------------- #
@@ -10,10 +11,8 @@ module Logjam
   livestream "production"
 
   # ----------------------- #
-  #  config for C importer  #
+  #     importer config     #
   # ----------------------- #
-
-  self.devices = %w[tcp://127.0.0.1:9606]
 
   stream "logjam-development"
   stream "logjam-production"
