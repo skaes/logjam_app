@@ -1,4 +1,4 @@
 mongodb: mongod
 memcached: memcached
-importer: ./service/importer/run -p development
+importer: ./service/importer/run -s development
 livestream: ./service/live-stream-development/run
