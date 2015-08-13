@@ -81,7 +81,7 @@ namespace :deploy do
   end
 
   task :config, :roles => :config do
-    device_config = `bundle exec rails runner -e production 'Logjam::Importer.new.generate_config'`
+    device_config = `bundle exec rails runner -e production 'puts Logjam::Importer.new.config'`
     put device_config, "/home/logjam/logjam.conf"
   end
 end
