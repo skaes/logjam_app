@@ -3,9 +3,8 @@ source "https://rubygems.org"
 gem "rake",           '~> 10.4.2'
 gem "rails",          '~> 4.2.1'
 gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 1.12.1'
-gem "bson",           '~> 1.12.1'
-gem "bson_ext",       '~> 1.12.1'
+gem "mongo",          '~> 2.0.6'
+gem "bson",           '~> 3.2.1'
 gem "oj",             '~> 2.12.1'
 gem "amqp",           '~> 1.5.0'
 
@@ -29,14 +28,7 @@ gem "wirble"
 group :development do
   gem "foreman", :require => false
   gem "byebug"
-  # gem "passenger" , "~> 4.0.20"
-
-  # uncomment the following lines if you want to run railsbench
-  # gem railsbench
-  # gem "gnuplot"
-
-  # uncomment if you want to profile
-  # gem "ruby-prof"
+  gem "better_errors"
 end
 
 group :test do

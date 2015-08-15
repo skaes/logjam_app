@@ -15,7 +15,7 @@ require 'font-awesome-rails'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
-# Bundler.require(:default, Rails.env) if defined?(Bundler)
+Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module LogjamApp
   class Application < Rails::Application
@@ -70,7 +70,10 @@ module LogjamApp
     config.cache_store = :mem_cache_store, "#{memcache_host}:#{memcache_port}"
 
     # wire logger for cache operations
-    config.after_initialize { Rails.cache.logger = Rails.logger }
+    config.after_initialize do
+      Rails.cache.logger = Rails.logger
+      Mongo::Logger.logger = Rails.logger
+    end
   end
 end
 
