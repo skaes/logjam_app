@@ -15,7 +15,7 @@ require 'font-awesome-rails'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+# Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module LogjamApp
   class Application < Rails::Application
