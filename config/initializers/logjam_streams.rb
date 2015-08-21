@@ -2,6 +2,12 @@
 # to production.
 
 module Logjam
+  # ----------------------- #
+  #     devices config      #
+  # ----------------------- #
+  self.devices = [
+    "tcp://localhost:9706",   # logjam-httpd
+  ]
 
   # ----------------------- #
   # performance data stream #
@@ -16,12 +22,5 @@ module Logjam
 
   stream "logjam-development"
   stream "logjam-production"
-
-  # ----------------------- #
-  #     devices config      #
-  # ----------------------- #
-  self.devices = [
-    "tcp://localhost:9706",   # logjam-httpd
-  ]
 
 end
