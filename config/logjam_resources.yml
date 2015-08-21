@@ -52,6 +52,7 @@ frontend_resources:
 - response_time: '#d34583'
 - request_time: '#bcbd22'
 - connect_time: '#ff4c4c'
+- navigation_time: '#286565'
 - dom_interactive: '#361be5'
 - frontend_time: '#000000'
 
