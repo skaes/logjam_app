@@ -23,14 +23,17 @@ set :deploy_via,            :remote_cache
 
 # set default environment variables
 set :default_environment, {
-  "PATH"               => "/opt/logjam/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-  "RAILS_ENV"          => "production",
-  "LOGJAM_USER"        => user,
-  "LOGJAM_ERROR_MAIL"  => ENV['LOGJAM_ERROR_MAIL'],
-  "LOGJAM_DIR"         => current_path,
-  "LOGJAM_SERVICE_DIR" => "#{shared_path}/service",
-  "RESTART_DELAY"      => 10,
-  "SVWAIT"             => 15
+  "PATH"                      => "/opt/logjam/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+  "RAILS_ENV"                 => "production",
+  "LOGJAM_USER"               => user,
+  "LOGJAM_ERROR_MAIL"         => ENV["LOGJAM_ERROR_MAIL"],
+  "LOGJAM_DIR"                => current_path,
+  "LOGJAM_SERVICE_DIR"        => "#{shared_path}/service",
+  "RESTART_DELAY"             => 10,
+  "SVWAIT"                    => 15,
+  "LOGJAM_IMPORTER_INSTALL"   => 1,
+  "LOGJAM_HTTPD_INSTALL"      => 1,
+  "LOGJAM_LIVESTREAM_INSTALL" => 1
 }
 
 # don't normalize asset timestamps, as we're using the asset pipeline'
