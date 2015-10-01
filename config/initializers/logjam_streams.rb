@@ -24,7 +24,7 @@ module Logjam
   stream "logjam-production"
 
   # pick up simple stream definitions from environment
-  ENV['LOGJAM_USER_STREAMS'].split(/\s*,\s*/).each do |s|
+  (ENV['LOGJAM_USER_STREAMS'] || "").split(/\s*,\s*/).each do |s|
     stream s if s =~ /\A[^-]+-[^-]+\z/
   end
 
