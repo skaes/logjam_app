@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
-gem "rake",           '~> 10.4.2'
+gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 4.2.5'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 2.0.6'
 gem "bson",           '~> 3.2.1'
-gem "oj",             '~> 2.12.1'
+gem "oj",             '~> 2.14.6'
 gem "amqp",           '~> 1.5.0'
 
 # uncomment for guaranteed uniqueness of request ids
