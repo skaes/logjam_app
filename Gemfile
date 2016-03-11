@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rake",           '~> 11.0.1'
+gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 4.2.6'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 2.0.6'
