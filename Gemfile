@@ -7,16 +7,12 @@ gem "mongo",          '~> 2.0.6'
 gem "bson",           '~> 3.2.1'
 gem "oj",             '~> 2.14.6'
 gem "amqp",           '~> 1.5.0'
-
-# uncomment for guaranteed uniqueness of request ids
-# gem "uuid4r",         '~> 0.2.0'
-
 gem "eventmachine",   '~> 1.0.7'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.15.0'  #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '~> 0.16.0'  #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.7.3'   #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
