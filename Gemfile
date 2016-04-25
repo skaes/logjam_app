@@ -12,7 +12,7 @@ gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.17.0'  #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '~> 0.18.0'  #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.8.1'   #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
