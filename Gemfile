@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].join(':')
+ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 4.2.6'
