@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].join(':')
+
 gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 4.2.6'
 gem "dalli",          '~> 2.7.0'
@@ -9,11 +11,17 @@ gem "oj",             '~> 2.14.6'
 gem "amqp",           '~> 1.5.0'
 gem "eventmachine",   '~> 1.0.7'
 gem "ffi",            '~> 1.9.0'
+gem "ffi-rzmq-core",  '~> 1.0.4',   #, :path => "~/src/ffi-rzmq-core"
+                                    :git => "https://github.com/skaes/ffi-rzmq-core.git",
+                                    :branch => "enable-direct-specification-of-zmq-lib-path"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "em-zeromq",      '~> 0.5.0'
 gem "em-websocket",   '~> 0.5.0'
-gem "logjam_agent",   '~> 0.18.0'  #, :path => "~/src/logjam_agent"
-gem "time_bandits",   '~> 0.8.1'   #, :path => "~/src/time_bandits"
+gem "snappy",         '~> 0.0.14',  #, :path => "~/src/rbsnappy"
+                                    :git => "https://github.com/skaes/rbsnappy.git",
+                                    :branch => "use-pkg-config-availabe"
+gem "logjam_agent",   '~> 0.18.0'   #, :path => "~/src/logjam_agent"
+gem "time_bandits",   '~> 0.8.1'    #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
 gem "whenever", :require => false
