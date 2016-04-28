@@ -20,7 +20,7 @@ gem "em-websocket",   '~> 0.5.0'
 gem "snappy",         '~> 0.0.14',  #, :path => "~/src/rbsnappy"
                                     :git => "https://github.com/skaes/rbsnappy.git",
                                     :branch => "use-pkg-config-availabe"
-gem "logjam_agent",   '~> 0.18.0'   #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '~> 0.19.0'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.8.1'    #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"

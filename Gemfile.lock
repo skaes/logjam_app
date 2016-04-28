@@ -98,7 +98,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.3)
-    logjam_agent (0.18.0)
+    logjam_agent (0.19.0)
       activesupport
       time_bandits (>= 0.6.0)
     loofah (2.0.3)
@@ -198,7 +198,7 @@ DEPENDENCIES
   font-awesome-rails
   foreman
   gc_hacks
-  logjam_agent (~> 0.18.0)
+  logjam_agent (~> 0.19.0)
   mongo (~> 2.0.6)
   oj (~> 2.14.6)
   rails (~> 4.2.6)
