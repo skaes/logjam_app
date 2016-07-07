@@ -2,7 +2,7 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require_relative 'config/application'
-LogjamApp::Application.load_tasks
+Rails.application.load_tasks
 
 desc "update code from the git repository"
 task :update do
