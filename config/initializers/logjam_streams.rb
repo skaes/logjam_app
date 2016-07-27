@@ -13,15 +13,13 @@ module Logjam
   # performance data stream #
   # ----------------------- #
 
-  livestream "development"
-  livestream "production"
+  livestream(ENV['LOGJAM_ENV'] || Rails.env)
 
   # ----------------------- #
   #     importer config     #
   # ----------------------- #
 
-  stream "logjam-development"
-  stream "logjam-production"
+  stream("logjam-#{ENV['LOGJAM_ENV'] || Rails.env}")
 
   # pick up simple stream definitions from environment
   (ENV['LOGJAM_USER_STREAMS'] || "").split(/\s*,\s*/).each do |s|

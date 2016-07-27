@@ -1,6 +1,7 @@
 module LogjamAgent
   # Configure the application name (required). Must not contain dots of hyphens.
   self.application_name = "logjam"
+  self.environment_name = ENV['LOGJAM_ENV'] || Rails.env
 
   # Configure the environment name (optional). Defaults to Rails.env.
   # self.environment_name = Rails.env
