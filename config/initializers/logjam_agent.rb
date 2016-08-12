@@ -7,7 +7,7 @@ module LogjamAgent
   # self.environment_name = Rails.env
 
   # Configure request data forwarder for ZeroMQ.
-  add_forwarder(:zmq, :host => "localhost", :port => 9605)
+  add_forwarder(:zmq, :host => "localhost", :port => 9604)
 
   # Configure request data forwarder for ZeroMQ.
   # add_forwarder(:amqp, :host => "message.broker.at.your.org"))
