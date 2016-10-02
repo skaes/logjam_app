@@ -36,10 +36,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    amq-protocol (2.0.1)
-    amqp (1.6.0)
-      amq-protocol (>= 2.0.1)
-      eventmachine
     arel (6.0.3)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -59,15 +55,7 @@ GEM
     coderay (1.1.1)
     concurrent-ruby (1.0.2)
     dalli (2.7.6)
-    em-websocket (0.5.1)
-      eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
-    em-zeromq (0.5.0)
-      eventmachine (>= 1.0.0)
-      ffi (>= 1.0.0)
-      ffi-rzmq (~> 2.0.1)
     erubis (2.7.0)
-    eventmachine (1.2.0.1)
     execjs (2.7.0)
     ffi (1.9.14)
     ffi-rzmq (2.0.4)
@@ -82,7 +70,6 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     highline (1.7.8)
-    http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.3)
     logjam_agent (0.24.2)
@@ -173,16 +160,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  amqp (~> 1.6.0)
   better_errors
   bson (~> 3.2.1)
   byebug
   capistrano (~> 2.15.6)
   capistrano_colors
   dalli (~> 2.7.0)
-  em-websocket (~> 0.5.0)
-  em-zeromq (~> 0.5.0)
-  eventmachine (~> 1.2.0)
   ffi (~> 1.9.0)
   ffi-rzmq (~> 2.0.1)
   ffi-rzmq-core (~> 1.0.5)
