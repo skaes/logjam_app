@@ -72,7 +72,7 @@ GEM
     highline (1.7.8)
     i18n (0.7.0)
     json (1.8.3)
-    logjam_agent (0.24.5)
+    logjam_agent (0.24.6)
       activesupport
       time_bandits (>= 0.6.0)
     loofah (2.0.3)
