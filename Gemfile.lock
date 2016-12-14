@@ -72,7 +72,7 @@ GEM
     highline (1.7.8)
     i18n (0.7.0)
     json (1.8.3)
-    logjam_agent (0.24.2)
+    logjam_agent (0.24.5)
       activesupport
       time_bandits (>= 0.6.0)
     loofah (2.0.3)
@@ -83,7 +83,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
-    minitest (5.9.0)
+    minitest (5.10.1)
     mongo (2.0.6)
       bson (~> 3.0)
     net-scp (1.2.1)
@@ -185,4 +185,4 @@ DEPENDENCIES
   wirble
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
