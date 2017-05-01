@@ -1,12 +1,13 @@
 module LogjamAgent
   # Configure the application name (required). Must not contain dots of hyphens.
   self.application_name = "logjam"
+  self.environment_name = ENV['LOGJAM_ENV'] || Rails.env
 
   # Configure the environment name (optional). Defaults to Rails.env.
   # self.environment_name = Rails.env
 
   # Configure request data forwarder for ZeroMQ.
-  add_forwarder(:zmq, :host => "localhost", :port => 9605)
+  add_forwarder(:zmq, :host => "localhost", :port => 9604)
 
   # Configure request data forwarder for ZeroMQ.
   # add_forwarder(:amqp, :host => "message.broker.at.your.org"))

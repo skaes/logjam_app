@@ -5,18 +5,14 @@ ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ]
 gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 5.0.0'
 gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 2.0.6'
-gem "bson",           '~> 3.2.1'
-gem "oj",             '~> 2.16'
-gem "amqp",           '~> 1.6.0'
-gem "eventmachine",   '~> 1.2.0'
+gem "mongo",          '~> 2.4.1'
+gem "bson",           '~> 4.2'
+gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
-gem "em-zeromq",      '~> 0.5.0'
-gem "em-websocket",   '~> 0.5.0'
 gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
-gem "logjam_agent",   '~> 0.21'     #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '~> 0.22'     #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails"
