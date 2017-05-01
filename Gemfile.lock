@@ -93,7 +93,7 @@ GEM
       net-ssh (>= 4.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
-    oj (2.18.5)
+    oj (3.0.3)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -170,7 +170,7 @@ DEPENDENCIES
   gc_hacks
   logjam_agent (~> 0.22)
   mongo (~> 2.0.6)
-  oj (~> 2.15)
+  oj (~> 3.0)
   rails (~> 4.2.6)
   rake (~> 10.5.0)
   sass-rails (~> 5.0.1)

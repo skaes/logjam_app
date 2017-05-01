@@ -7,7 +7,7 @@ gem "rails",          '~> 4.2.6'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 2.0.6'
 gem "bson",           '~> 3.2.1'
-gem "oj",             '~> 2.15'
+gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
