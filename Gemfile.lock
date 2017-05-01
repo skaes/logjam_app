@@ -40,7 +40,7 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
-    bson (3.2.6)
+    bson (4.2.1)
     builder (3.2.3)
     byebug (9.0.6)
     capistrano (2.15.9)
@@ -82,8 +82,8 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
-    mongo (2.0.6)
-      bson (~> 3.0)
+    mongo (2.4.1)
+      bson (>= 4.2.1, < 5.0.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -157,7 +157,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors
-  bson (~> 3.2.1)
+  bson (~> 4.2)
   byebug
   capistrano (~> 2.15.6)
   capistrano_colors
@@ -169,7 +169,7 @@ DEPENDENCIES
   foreman
   gc_hacks
   logjam_agent (~> 0.22)
-  mongo (~> 2.0.6)
+  mongo (~> 2.4.1)
   oj (~> 3.0)
   rails (~> 4.2.6)
   rake (~> 10.5.0)

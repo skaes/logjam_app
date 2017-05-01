@@ -5,8 +5,8 @@ ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ]
 gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 4.2.6'
 gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 2.0.6'
-gem "bson",           '~> 3.2.1'
+gem "mongo",          '~> 2.4.1'
+gem "bson",           '~> 4.2'
 gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"
