@@ -15,7 +15,7 @@ gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '~> 0.22'     #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '~> 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
-gem "font-awesome-rails", :github => "bokmann/font-awesome-rails", :branch => "master"
+gem "font-awesome-rails", '~> 4.7.0'
 gem "whenever", :require => false
 
 # if you don't put it here, running a rails console in production will complain
