@@ -6,7 +6,7 @@ gem "rake",           '~> 10.5.0'
 gem "rails",          '~> 5.1.0'
 gem "dalli",          '~> 2.7.0'
 gem "mongo",          '~> 2.4.1'
-gem "bson",           '~> 4.2'
+gem "bson",           '~> 4.2',   :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.9.0'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"

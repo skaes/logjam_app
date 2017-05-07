@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/skaes/bson-ruby.git
+  revision: 7c161014a4dc96c564610220bfa8fbc675ffab39
+  branch: reduce-memory-allocation-on-resizing-buffers
+  specs:
+    bson (4.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,7 +47,6 @@ GEM
       tzinfo (~> 1.1)
     arel (8.0.0)
     bindex (0.5.0)
-    bson (4.2.1)
     builder (3.2.3)
     byebug (9.0.6)
     capistrano (2.15.9)
@@ -164,7 +170,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson (~> 4.2)
+  bson (~> 4.2)!
   byebug
   capistrano (~> 2.15.6)
   capistrano_colors
