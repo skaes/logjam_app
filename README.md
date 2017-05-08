@@ -5,7 +5,7 @@ applications. Its primary target are Ruby on Rails applications, although it's p
 with other technologies.
 
 It differs from other Rails monitoring solutions in that is is meant to be hosted in your own
-datacenter (or private cloud), for two reasons:
+data center (or private cloud), for two reasons:
 
 * it requires low latency between the monitored application and itself
 * it stores extensive information for web requests, which might contain sensitive data
@@ -41,13 +41,13 @@ In the following, I assume you're a Rails developer.
 ### Install required software packages
 
 * mongodb (see http://www.mongodb.org/downloads)
-* zeromq (see http://zeromq.org/intro:get-the-software)
 * memcached (see http://memcached.org/)
 * a patched ruby for greater fun (see https://github.com/skaes/rvm-patchsets)
+* logjam-tools (see https://github.com/skaes/logjam-tools)
 
 If you're on a Mac and are using MacPorts:
 
-    sudo port install mongodb memcached zmq libffi
+    sudo port install mongodb memcached
 
 I'm sure with Home Brew it's equally simple, but I haven't tried it.
 
@@ -57,14 +57,17 @@ In either case, you might need to create the mongodb data directory:
 
 If you're using rvm, I recommend to install a patched ruby like so:
 
-    rvm install 2.1.2-railsexpress --patch railsexpress
-    rvm use 2.1.2-railsexpress@logjam --create
+    rvm install 2.3.3-railsexpress --patch railsexpress
+    rvm use 2.3.3-railsexpress@logjam --create
     gem install bundler
 
-Note: make sure to have a recent rvm version installed, otherwise it will not have up to date ruby
-patches. If in doubt, run
+Note: make sure to have a recent rvm version installed, otherwise it
+will not have up to date ruby patches. If in doubt, run
 
     rvm get latest
+
+Please follow the instructions on https://github.com/skaes/logjam-tools
+to install logjam tools.
 
 
 ### Clone the git repository and bundle the application
@@ -73,10 +76,11 @@ patches. If in doubt, run
     cd logjam_app
     git submodule init
     git submodule update
-    bundle
-    echo 2.1.2-railsexpress > .ruby-version
+    echo 2.3.3-railsexpress > .ruby-version
     echo logjam > .ruby-gemset
+    cd .
     mkdir -p log
+    bundle
 
 ### Start the services and initialize the database
 
@@ -125,64 +129,46 @@ to Logjam:
 * AMQP
 * ZeroMQ
 
-Both methods have their advantages and disadvantages:
+AMQP was the first transport to be implemented when all the importer code was still in
+ruby. It requires a running message broker and a corresponding logjam-device to publish
+messages for the importer process, but does not require ZMQ libraries to be installed on
+machines running message publishers. Nowadays, I consider it mostly deprecated, but if you
+prefer it, [RabbitMQ](http://www.rabbitmq.com/) is a good broker choice.
 
-* AMQP requires a running message broker which acts as an intermediate, provides buffering and
-  allows the logjam request importers to scale, but requires supervision.
+With ZeroMQ, the application can either talk directly to the logjam request import daemon
+or a logjam-device can be used as an
+intermediate. The
+[logjam-tools README](https://github.com/skaes/logjam-tools/blob/master/README.md) has
+more details abut port usage of importer, devices and other daemons.
 
-* With ZeroMQ, the application talks directly to the logjam request import daemon(s). Currently this
-  doesn't scale as easily as the AMQP transport. This will be changed in the future.
-
-For AMQP, I can recommend using [RabbitMQ](http://www.rabbitmq.com/).
 
 ### Configuring Logjam
 
 Application monitoring is configured through stream declarations in the file
-./config/initializers/logjam_streams.rb. Such a declaration looks like this:
+`./config/initializers/logjam_streams.rb`. In the simplest case, such a declaration looks
+like this:
 
 ````ruby
-    stream "app-env" do
-      importer do
-         type :zmq
-         port 9605
-      end
-    end
+stream "app-env"
 ````
 
-Here "app" is the name which will be used by logjam internally and "env" the name of the environment
-(typically "production"). Note that each stream needs a separate port, on which the corresponding
-importer process will listen (interface 0.0.0.0).
-
-For the AMQP transport:
-
-````ruby
-    stream "app-env" do
-      importer do
-        type  :amqp
-        hosts "amqp-broker.at.your.org"
-      end
-      workers 3
-    end
-````
-
-Here you can specify how many workers will be started by logjam to process request data.
+Here `app` is the name which will be used by logjam internally and "env" the name of the
+environment (typically "production").
 
 
 ### Instrumenting the application
 
 * add the logjam_agent gem to the Gemfile of your application
 * add an initializer for logjam_agent and specify transport method and endpoint
-* add either the bunny gem or the ffi-rzmq gem to the Gemfile (based on which transport you chose)
-* add an initializer for time_bandits and specify which metrics to track
+* add either the bunny gem or the ffi-rzmq gem to the Gemfile (depending on which transport you chose)
+* add an initializer for time_bandits gem and specify which metrics to track
 
 Have a look at the corresponding files in logjam itself to get an idea on how to proceed.
-
-Detailed explanation: coming soon ...
 
 
 ## Deploying Logjam into production
 
-Coming soon ...
+Contact the author ...
 
 
 ## Authors
@@ -195,7 +181,7 @@ Coming soon ...
 
 Older versions of this code were MIT licensed. The current license version is GPLv3.
 
-Copyright (c) 2009-2015 Stefan Kaes
+Copyright (c) 2009-2017 Stefan Kaes
 
 Copyright (c) 2009 David Anderson
 
