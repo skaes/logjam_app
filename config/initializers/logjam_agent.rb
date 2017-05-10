@@ -2,12 +2,13 @@ module LogjamAgent
   # Configure the application name (required). Must not contain dots of hyphens.
   self.application_name = "logjam"
   self.environment_name = ENV['LOGJAM_ENV'] || Rails.env
+  self.auto_detect_logged_exceptions
 
   # Configure the environment name (optional). Defaults to Rails.env.
   # self.environment_name = Rails.env
 
   # Configure request data forwarder for ZeroMQ.
-  add_forwarder(:zmq, :host => "localhost", :port => 9604)
+  self.add_forwarder(:zmq, :host => "localhost", :port => 9604)
 
   # Configure request data forwarder for ZeroMQ.
   # add_forwarder(:amqp, :host => "message.broker.at.your.org"))
@@ -36,4 +37,10 @@ module LogjamAgent
   # Snappy is faster and less CPU intensive than GZIP, GZIP achieves
   # higher compression rates.
   self.compression_method = SNAPPY_COMPRESSION
+
+  # Activate the split between hard and soft-exceptions. Soft exceptions are
+  # all exceptions below a log level of Logger::ERROR.
+  # Logjam itself can then display those soft exceptions differently.
+  # defaults to `false`
+  self.split_hard_and_soft_exceptions = true
 end
