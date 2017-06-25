@@ -21,3 +21,12 @@ namespace :docker do
     system "docker run --rm -i -t -p 3000:3000 -p 8080:8080 --name logjam stkaes/logjamdemo"
   end
 end
+
+namespace :test do
+  namespace :db do
+    desc "start test database"
+    task :start do
+      system "docker run --rm -p 27018:27017 percona/percona-server-mongodb mongod"
+    end
+  end
+end
