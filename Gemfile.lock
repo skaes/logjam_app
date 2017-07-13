@@ -68,8 +68,8 @@ GEM
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     highline (1.7.8)
-    i18n (0.8.4)
-    logjam_agent (0.25.2)
+    i18n (0.8.6)
+    logjam_agent (0.25.3)
       activesupport
       time_bandits (>= 0.6.0)
     loofah (2.0.3)
@@ -141,7 +141,7 @@ GEM
     thread_safe (0.3.6)
     thread_variables (0.2.0)
     tilt (2.0.7)
-    time_bandits (0.10.7)
+    time_bandits (0.10.8)
       activesupport (>= 2.3.2)
       thread_variables
     tzinfo (1.2.3)
