@@ -21,6 +21,9 @@ gem "whenever", :require => false
 # if you don't put it here, running a rails console in production will complain
 gem "wirble"
 
+# need to do some profiling in production
+gem "ruby-prof"
+
 group :development do
   gem "foreman", :require => false
   gem "byebug"
