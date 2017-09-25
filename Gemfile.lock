@@ -94,7 +94,7 @@ GEM
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
-    oj (3.3.5)
+    oj (3.3.6)
     rack (2.0.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
