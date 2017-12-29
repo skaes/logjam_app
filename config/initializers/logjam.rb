@@ -21,4 +21,19 @@ module Logjam
   # Set how often accumulated stats are flushed to the database.
   # This setting also determines the stream update interval
   self.database_flush_interval = ENV['LOGJAM_DATABASE_FLUSH_INTERVAL'] || 1
+
+  # Allow cross domain Ajax requests.
+  # self.allow_cross_domain_ajax = true
+
+  # Comma separated list of request names which we assume are backend only requests:
+  # "*" means all requests are backend only
+  # "" means no requests are backend only
+  # self.backend_only_requests = "Rest::,Processors::,Cron::"
+
+  # Configure issue tracker.
+  # self.github_issue_url = "https://github.com/skaes/logjam_app/issues/new"
+
+  # Configure websocket uri. If not set, hostname will extracted from request,
+  # protocol will be "ws" and port will be 8080 on Linux and 9608 on OS X.
+  self.web_socket_uri = ENV['LOGJAM_WEBSOCKET_URI']
 end
