@@ -35,5 +35,8 @@ module Logjam
 
   # Configure websocket uri. If not set, hostname will extracted from request,
   # protocol will be "ws" and port will be 8080 on Linux and 9608 on OS X.
-  self.web_socket_uri = ENV['LOGJAM_WEBSOCKET_URI']
+  self.web_socket_uri = ENV['LOGJAM_WEB_SOCKET_URI']
+
+  # Configure frontend timings collector.
+  self.frontend_timings_collector = ENV['LOGJAM_FRONTEND_TIMINGS_COLLECTOR']
 end

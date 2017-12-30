@@ -10,4 +10,8 @@ export RUBY_GC_HEAP_INIT_SLOTS=500000
 export RUBY_GC_HEAP_FREE_SLOTS=200000
 export RUBY_GC_MALLOC_LIMIT=500000000
 
+if test -f /etc/default/logjam; then
+    set -a; source /etc/default/logjam; set +a
+fi
+
 exec $ruby "$@"
