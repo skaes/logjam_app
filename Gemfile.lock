@@ -74,7 +74,7 @@ GEM
     logjam_agent (0.26.5)
       activesupport
       time_bandits (>= 0.6.0)
-    loofah (2.2.0)
+    loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.0)
