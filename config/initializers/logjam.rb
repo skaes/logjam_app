@@ -39,4 +39,5 @@ module Logjam
 
   # Configure frontend timings collector.
   self.frontend_timings_collector = ENV['LOGJAM_FRONTEND_TIMINGS_COLLECTOR']
+  self.frontend_timings_collector_port = ENV['LOGJAM_FRONTEND_TIMINGS_COLLECTOR_PORT']
 end
