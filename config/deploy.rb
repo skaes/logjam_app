@@ -38,8 +38,6 @@ set :default_environment, {
 
 # don't normalize asset timestamps, as we're using the asset pipeline'
 set :normalize_asset_timestamps, false
-# we are using precompiled assets
-set :assets_role, []
 
 ######### Bundler Settings ############
 set :bundle_dir,      File.join(fetch(:shared_path), 'bundle')
