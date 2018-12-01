@@ -2,10 +2,10 @@ source "https://rubygems.org"
 
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
-gem "rake",           '~> 10.5.0'
+gem "rake",           '~> 10.5.0' # don't want a ton of useless warnings
 gem "rails",          '~> 5.2.0'
 gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 2.4.1'
+gem "mongo",          '~> 2.6.2'
 gem "bson",           '~> 4.2'   #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.9.0'

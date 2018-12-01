@@ -75,8 +75,10 @@ GEM
     highline (2.0.0)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
-    logjam_agent (0.27.0)
+    logjam_agent (0.28.0)
       activesupport
+      ffi-rzmq (>= 2.0.4)
+      ffi-rzmq-core (>= 1.0.5)
       time_bandits (>= 0.6.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
@@ -90,8 +92,8 @@ GEM
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    mongo (2.4.3)
-      bson (>= 4.2.1, < 5.0.0)
+    mongo (2.6.2)
+      bson (>= 4.3.0, < 5.0.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -193,7 +195,7 @@ DEPENDENCIES
   foreman
   gc_hacks
   logjam_agent (~> 0.22)
-  mongo (~> 2.4.1)
+  mongo (~> 2.6.2)
   oj (~> 3.0)
   rails (~> 5.2.0)
   rake (~> 10.5.0)
