@@ -3,12 +3,12 @@ source "https://rubygems.org"
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake",           '~> 10.5.0' # don't want a ton of useless warnings
-gem "rails",          '~> 5.2.0'
-gem "dalli",          '~> 2.7.0'
-gem "mongo",          '~> 2.6.2'
+gem "rails",          '~> 5.2.2'
+gem "dalli",          '~> 2.7'
+gem "mongo",          '~> 2.6'
 gem "bson",           '~> 4.2'   #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
-gem "ffi",            '~> 1.9.0'
+gem "ffi",            '~> 1.10'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
