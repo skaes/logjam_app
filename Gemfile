@@ -2,8 +2,8 @@ source "https://rubygems.org"
 
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
-gem "rake",           '~> 10.5.0' # don't want a ton of useless warnings
-gem "rails",          '~> 5.2.2'
+gem "rake"
+gem "rails",          '~> 6.0.0'
 gem "dalli",          '~> 2.7'
 gem "mongo",          '~> 2.6'
 gem "bson",           '~> 4.2'   #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
@@ -12,8 +12,8 @@ gem "ffi",            '~> 1.10'
 gem "ffi-rzmq-core",  '~> 1.0.5'   #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
-gem "logjam_agent",   '~> 0.29'     #, :path => "~/src/logjam_agent"
-gem "time_bandits",   '~> 0.10'     #, :path => "~/src/time_bandits"
+gem "logjam_agent",   '~> 0.29'     , :path => "~/src/logjam_agent"
+gem "time_bandits",   '~> 0.10'     , :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails", '~> 4.7.0'
 gem "whenever", :require => false
@@ -25,7 +25,6 @@ gem "wirble"
 gem "ruby-prof"
 
 group :development do
-  gem "foreman", :require => false
   gem "byebug"
   # gem "better_errors"
   gem 'web-console'
@@ -39,7 +38,7 @@ group :deployment do
   gem "capistrano_colors"
 end
 
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '>= 1.3.0'
 
 # gem 'jquery-rails'
