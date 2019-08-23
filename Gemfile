@@ -26,6 +26,7 @@ gem "ruby-prof"
 
 group :development do
   gem "byebug"
+  gem "foreman"
   # gem "better_errors"
   gem 'web-console'
 end
