@@ -29,6 +29,8 @@ group :development do
   gem "foreman"
   # gem "better_errors"
   gem 'web-console'
+  # TODO: this should not be necessary, but running webrick fails fails otherwise
+  gem 'sass'
 end
 
 group :test do
