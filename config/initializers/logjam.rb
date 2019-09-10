@@ -40,4 +40,7 @@ module Logjam
   # Configure frontend timings collector.
   self.frontend_timings_collector = ENV['LOGJAM_FRONTEND_TIMINGS_COLLECTOR']
   self.frontend_timings_collector_port = ENV['LOGJAM_FRONTEND_TIMINGS_COLLECTOR_PORT']
+
+  # Configure logjam url to be used by importer.
+  self.logjam_url = ENV['LOGJAM_URL'] || ( Rails.env.production? ? "http://localhost" : "http://localhost:3000")
 end
