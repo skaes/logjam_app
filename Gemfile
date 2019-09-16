@@ -12,7 +12,7 @@ gem "ffi",            '~> 1.10'
 gem "ffi-rzmq-core",  '~> 1.0.5'    #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
-gem "logjam_agent",   '>= 0.29.2'   #, :path => "~/src/logjam_agent"
+gem "logjam_agent",   '>= 0.29.3'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails", '~> 4.7.0'
