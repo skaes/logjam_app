@@ -59,7 +59,7 @@ GEM
     bindex (0.8.1)
     bson (4.7.0)
     builder (3.2.4)
-    byebug (11.0.1)
+    byebug (11.1.0)
     capistrano (2.15.9)
       highline
       net-scp (>= 1.0.0)
