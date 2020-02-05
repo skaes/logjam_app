@@ -40,10 +40,21 @@ set :default_environment, {
 set :normalize_asset_timestamps, false
 
 ######### Bundler Settings ############
-set :bundle_dir,      File.join(fetch(:shared_path), 'bundle')
-set :bundle_without,  [:development, :test, :deployment]
+set :bundle_dir,      ""
+set :bundle_flags,    "--quiet"
+set :bundle_without,  []
 
+require "bundler"
+Bundler.ui.instance_eval "def warn(*args); end"
 require 'bundler/capistrano'
+
+before 'bundle:install' do
+  run "cd #{latest_release} && bundle config --local path #{File.join(fetch(:shared_path), 'bundle')}"
+  run "cd #{latest_release} && bundle config --local deployment true"
+  run "cd #{latest_release} && bundle config --local without development test deployment"
+  run "cd #{latest_release} && bundle config --local jobs 4"
+end
+
 require 'capistrano_colors'
 
 ######### cronjobs ##############
