@@ -1,3 +1,5 @@
+Warning[:deprecated] = false if RUBY_VERSION =~ /\A2.7/
+
 source "https://rubygems.org"
 
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
