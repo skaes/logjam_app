@@ -1,4 +1,4 @@
-Warning[:deprecated] = false if RUBY_VERSION =~ /\A2.7/
+# Warning[:deprecated] = false if RUBY_VERSION =~ /\A2.7/
 
 source "https://rubygems.org"
 
