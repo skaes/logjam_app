@@ -202,7 +202,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson (~> 4.2)
+  bson (~> 4.5)
   byebug
   capistrano (~> 2.15.6)
   capistrano_colors
