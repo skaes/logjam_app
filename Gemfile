@@ -7,7 +7,7 @@ ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ]
 gem "rake"
 gem "rails",          '~> 6.0.0'
 gem "dalli",          '~> 2.7'
-gem "mongo",          '~> 2.6'
+gem "mongo",          '~> 2.8'
 gem "bson",           '~> 4.2'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.10'

@@ -214,7 +214,7 @@ DEPENDENCIES
   foreman
   gc_hacks
   logjam_agent (>= 0.32.0)
-  mongo (~> 2.6)
+  mongo (~> 2.8)
   oj (~> 3.0)
   rails (~> 6.0.0)
   rake
