@@ -87,7 +87,7 @@ GEM
     highline (2.0.3)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    logjam_agent (0.32.0)
+    logjam_agent (0.32.1)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
@@ -213,7 +213,7 @@ DEPENDENCIES
   font-awesome-rails (~> 4.7.0)
   foreman
   gc_hacks
-  logjam_agent (>= 0.32.0)
+  logjam_agent (>= 0.32.1)
   mongo (~> 2.8)
   oj (~> 3.0)
   rails (~> 6.0.0)
