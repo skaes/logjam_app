@@ -22,7 +22,7 @@ module Logjam
   stream("logjam-#{ENV['LOGJAM_ENV'] || Rails.env}")
 
   # pick up simple stream definitions from environment
-  (ENV['LOGJAM_USER_STREAMS'] || "").split(/\s*,\s*/).each do |s|
+  (ENV['LOGJAM_USER_STREAMS'] || "").strip.split(/[\s,]+/).each do |s|
     stream s if s =~ /\A.+-[^-]+\z/
   end
 
