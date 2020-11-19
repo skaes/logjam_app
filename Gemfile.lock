@@ -71,7 +71,7 @@ GEM
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     dalli (2.7.11)
-    erubi (1.9.0)
+    erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.13.1)
     ffi-rzmq (2.0.7)
