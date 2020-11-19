@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  memcached:
+    image: memcached:1.5.19
+    ports:
+      - "11211:11211"
+
+  mongodb:
+    image: mongo:4.4-bionic
+    command: mongod
+    volumes:
+      - ~/data/db.logjamdb1b:/data/db
+    ports:
+      - "27017:27017"
+
+  testdb:
+    image: mongo:4.4-bionic
+    command: mongod
+    volumes:
+      - ~/data/db.testdb1:/data/db
+    ports:
+      - "27018:27017"

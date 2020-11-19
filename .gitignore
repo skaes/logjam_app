@@ -16,3 +16,8 @@ plus.png
 crap
 murks
 .byebug_history
+dumps
+Dockerfile-*
+prometheus_*
+/misc
+/.dockerignore
