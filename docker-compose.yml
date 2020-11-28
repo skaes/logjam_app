@@ -2,7 +2,7 @@ version: '2'
 
 services:
   memcached:
-    image: memcached:1.5.19
+    image: memcached:1.6.8
     ports:
       - "11211:11211"
 
