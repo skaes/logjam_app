@@ -36,7 +36,7 @@ module LogjamApp
     config.i18n.enforce_available_locales = false
 
     # configure the cache store (uses dalli)
-    memcache_host = (ENV['LOGJAM_MEMCACHE_HOST'] || ENV['LOGJAMCACHE_NAME'] || 'localhost').split('/').last
+    memcache_host = (ENV['LOGJAM_MEMCACHE_HOST'] || ENV['LOGJAMCACHE_NAME'] || '127.0.0.1').split('/').last
     memcache_port = (ENV['LOGJAM_MEMCACHE_PORT'] || ENV['LOGJAMCACHE_PORT_11211_TCP_PORT'] || 11211).to_i
     config.cache_store = :mem_cache_store, "#{memcache_host}:#{memcache_port}", { :namespace => "logjam" }
 
