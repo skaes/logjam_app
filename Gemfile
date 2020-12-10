@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake"
-gem "rails",          '~> 6.0.0'
+gem "rails",          '~> 6.1.0'
 gem "dalli",          '~> 2.7'
 gem "mongo",          '~> 2.8'
 gem "bson",           '~> 4.5'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
@@ -17,7 +17,7 @@ gem "snappy",         '~> 0.0.15'   #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.32.1'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
-gem "font-awesome-rails", '~> 4.7.0'
+gem "font-awesome-rails", '~> 4.7.0.5', :git => "git@github.com:bokmann/font-awesome-rails.git", :branch => "master"
 gem "whenever", :require => false
 
 # if you don't put it here, running a rails console in production will complain
