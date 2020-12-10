@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:bokmann/font-awesome-rails.git
+  remote: https://github.com/bokmann/font-awesome-rails.git
   revision: d4a2e506be0318e35d05ad22d36531b7da393615
   branch: master
   specs:
