@@ -30,3 +30,6 @@ namespace :test do
     end
   end
 end
+
+# TODO: Remove this file when https://github.com/rails/rails/issues/40795 has a fix.
+Rake::Task["assets:precompile"].prerequisites.delete("yarn:install")
