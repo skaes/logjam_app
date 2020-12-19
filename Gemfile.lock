@@ -85,7 +85,7 @@ GEM
     dalli (2.7.11)
     erubi (1.10.0)
     execjs (2.7.0)
-    ffi (1.13.1)
+    ffi (1.14.0)
     ffi-rzmq (2.0.7)
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
@@ -97,7 +97,7 @@ GEM
     highline (2.0.3)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    logjam_agent (0.32.1)
+    logjam_agent (0.32.2)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
@@ -216,13 +216,13 @@ DEPENDENCIES
   capistrano (~> 2.15.6)
   capistrano_colors
   dalli (~> 2.7)
-  ffi (~> 1.13.1)
+  ffi (~> 1.13)
   ffi-rzmq (~> 2.0.1)
   ffi-rzmq-core (~> 1.0.5)
   font-awesome-rails (~> 4.7.0.5)!
   foreman
   gc_hacks
-  logjam_agent (>= 0.32.1)
+  logjam_agent (>= 0.32.2)
   mongo (~> 2.8)
   oj (~> 3.0)
   rails (~> 6.1.0)
