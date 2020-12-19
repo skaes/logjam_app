@@ -10,7 +10,7 @@ gem "dalli",          '~> 2.7'
 gem "mongo",          '~> 2.8'
 gem "bson",           '~> 4.5'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
-gem "ffi",            '~> 1.10'
+gem "ffi",            '~> 1.13.1'   # can't use ffi 1.14.0, see https://github.com/ffi/ffi/issues/857
 gem "ffi-rzmq-core",  '~> 1.0.5'    #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "snappy",         '~> 0.1.0'   #, :path => "~/src/rbsnappy"
