@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/bokmann/font-awesome-rails.git
-  revision: d4a2e506be0318e35d05ad22d36531b7da393615
+  revision: 87ce085ec38d9ca29fdbfd9df9e704e0a640a187
   branch: master
   specs:
-    font-awesome-rails (4.7.0.5)
+    font-awesome-rails (4.7.0.6)
       railties (>= 3.2, < 6.2)
 
 GEM
@@ -85,7 +85,7 @@ GEM
     dalli (2.7.11)
     erubi (1.10.0)
     execjs (2.7.0)
-    ffi (1.14.0)
+    ffi (1.14.1)
     ffi-rzmq (2.0.7)
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
@@ -216,10 +216,10 @@ DEPENDENCIES
   capistrano (~> 2.15.6)
   capistrano_colors
   dalli (~> 2.7)
-  ffi (~> 1.13)
+  ffi (~> 1.14.1)
   ffi-rzmq (~> 2.0.1)
   ffi-rzmq-core (~> 1.0.5)
-  font-awesome-rails (~> 4.7.0.5)!
+  font-awesome-rails (~> 4.7.0.6)!
   foreman
   gc_hacks
   logjam_agent (>= 0.32.2)

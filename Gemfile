@@ -10,14 +10,14 @@ gem "dalli",          '~> 2.7'
 gem "mongo",          '~> 2.8'
 gem "bson",           '~> 4.5'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
-gem "ffi",            '~> 1.13'
+gem "ffi",            '~> 1.14.1'
 gem "ffi-rzmq-core",  '~> 1.0.5'    #, :path => "~/src/ffi-rzmq-core"
 gem "ffi-rzmq",       '~> 2.0.1'
 gem "snappy",         '~> 0.1.0'    #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.32.2'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
-gem "font-awesome-rails", '~> 4.7.0.5', :git => "https://github.com/bokmann/font-awesome-rails.git", :branch => "master"
+gem "font-awesome-rails", '~> 4.7.0.6', :git => "https://github.com/bokmann/font-awesome-rails.git", :branch => "master"
 gem "whenever", :require => false
 
 # if you don't put it here, running a rails console in production will complain
