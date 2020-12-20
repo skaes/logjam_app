@@ -20,19 +20,12 @@ gem "gc_hacks"
 gem "font-awesome-rails", '~> 4.7.0.6', :git => "https://github.com/bokmann/font-awesome-rails.git", :branch => "master"
 gem "whenever", :require => false
 
-# if you don't put it here, running a rails console in production will complain
-gem "wirble"
-
-# need to do some profiling in production
-gem "ruby-prof"
+gem "ruby-prof", :group => [:development, :test]
 
 group :development do
   gem "byebug"
   gem "foreman"
-  # gem "better_errors"
-  gem 'web-console'
-  # TODO: this should not be necessary, but running webrick fails fails otherwise
-  gem 'sass'
+  gem "web-console"
 end
 
 group :test do
@@ -43,9 +36,5 @@ group :deployment do
   gem "capistrano_colors"
 end
 
-gem 'sass-rails', '~> 6.0'
-gem 'uglifier', '>= 1.3.0'
-
-# gem 'jquery-rails'
-# gem 'jbuilder', '~> 2.5'
-# gem 'bcrypt', '~> 3.1.7'
+gem "sass-rails", '~> 6.0'
+gem "uglifier", '>= 1.3.0'
