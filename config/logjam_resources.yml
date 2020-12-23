@@ -10,7 +10,6 @@ time_resources:
 - other_time: '#b3d1f9'
 - memcache_time: '#ffa500'
 - redis_time: '#a41a11'
-- gearman_time: '#00aa33'
 - oauth_time: '#00aa33'
 - amiando_time: '#b877f4'
 - amqp_time: '#6c92b5'
@@ -23,6 +22,7 @@ time_resources:
 - mapping_time: '#00aaaa'
 - db_time: '#ff0000'
 - riak_time: '#d34583'
+- s3_time: '#d34583'
 - view_time: '#0022ff'
 - total_time: '#000000'
 
@@ -33,7 +33,6 @@ call_resources:
 - memcache_writes: '#aec7e8'
 - memcache_calls: '#ffa500'
 - redis_calls: '#a41a11'
-- gearman_calls: '#00aa33'
 - amiando_calls: '#b877f4'
 - amqp_calls: '#6c92b5'
 - momentum_calls: '#567757'
@@ -47,6 +46,7 @@ call_resources:
 - db_sql_query_cache_hits: '#00ff00'
 - db_calls: '#ff0000'
 - riak_calls: '#d34583'
+- s3_calls: '#d34583'
 
 memory_resources:
 - allocated_memory: '#ff00ff'
