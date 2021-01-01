@@ -26,6 +26,7 @@ group :development do
   gem "byebug"
   gem "foreman"
   gem "web-console"
+  gem "webrick"
 end
 
 group :test do
