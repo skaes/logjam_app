@@ -91,7 +91,7 @@ GEM
     highline (2.0.3)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
-    logjam_agent (0.32.2)
+    logjam_agent (0.32.3)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
