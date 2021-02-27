@@ -91,7 +91,7 @@ GEM
     highline (2.0.3)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
-    logjam_agent (0.32.3)
+    logjam_agent (0.32.4)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
@@ -107,7 +107,7 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
-    minitest (5.14.3)
+    minitest (5.14.4)
     mongo (2.14.0)
       bson (>= 4.8.2, < 5.0.0)
     net-scp (3.0.0)
