@@ -89,19 +89,19 @@ GEM
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     highline (2.0.3)
-    i18n (1.8.9)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     logjam_agent (0.32.4)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
       time_bandits (>= 0.12.2)
-    loofah (2.9.0)
+    loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (1.0.0)
+    marcel (1.0.1)
     method_source (1.0.0)
     mini_mime (1.0.3)
     mini_portile2 (2.5.0)
@@ -116,10 +116,10 @@ GEM
     net-ssh-gateway (2.0.0)
       net-ssh (>= 4.0.0)
     nio4r (2.5.7)
-    nokogiri (1.11.2)
+    nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    oj (3.11.3)
+    oj (3.11.5)
     racc (1.5.2)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -223,4 +223,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   2.2.7
+   2.2.16
