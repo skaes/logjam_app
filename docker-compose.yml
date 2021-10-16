@@ -2,12 +2,12 @@ version: '2'
 
 services:
   memcached:
-    image: memcached:1.6.8
+    image: memcached:1.6.12
     ports:
       - "11211:11211"
 
   mongodb:
-    image: mongo:4.4-bionic
+    image: mongo:4.4-focal
     command: mongod
     volumes:
       - ~/data/db.logjamdb1b:/data/db
@@ -15,7 +15,7 @@ services:
       - "27017:27017"
 
   testdb:
-    image: mongo:4.4-bionic
+    image: mongo:4.4-focal
     command: mongod
     volumes:
       - ~/data/db.testdb1:/data/db
