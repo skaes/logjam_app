@@ -75,13 +75,6 @@ namespace :deploy do
   end
 
   desc <<-DESC
-  Symlink sockets directory.
-  DESC
-  task :importer_sockets, :except => {:no_release => true} do
-    run "ln -nsf #{shared_path}/sockets #{latest_release}/tmp/sockets"
-  end
-
-  desc <<-DESC
   Update known databases.
   DESC
   task :update_known_databases, :roles => :app do
@@ -149,7 +142,6 @@ end
 ##################################################################
 
 after 'deploy:update_code' do
-  deploy.importer_sockets
   deploy.update_known_databases
   deploy.config
 end
@@ -158,8 +150,4 @@ after 'deploy' do
   deploy.cleanup
   deploy.restart
   daemons.install
-end
-
-after 'deploy:setup' do
-  run "test -d #{shared_path}/sockets || mkdir -p #{shared_path}/sockets"
 end
