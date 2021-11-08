@@ -143,7 +143,6 @@ end
 
 after 'deploy:update_code' do
   deploy.update_known_databases
-  deploy.config
 end
 
 after 'deploy' do
