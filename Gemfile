@@ -5,7 +5,7 @@ source "https://rubygems.org"
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake"
-gem "rails",          '~> 6.1.0'
+gem "rails",          '~> 7.0'
 gem "dalli",          '~> 2.7'
 gem "mongo",          '~> 2.8'
 gem "bson",           '~> 4.5'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
