@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/rails/rails.git
-  revision: 6a0f6c4d70b198ef36c2d512314248dabec6fbbc
-  branch: 7-0-stable
+GEM
+  remote: https://rubygems.org/
   specs:
     actioncable (7.0.0)
       actionpack (= 7.0.0)
@@ -62,31 +60,6 @@ GIT
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    rails (7.0.0)
-      actioncable (= 7.0.0)
-      actionmailbox (= 7.0.0)
-      actionmailer (= 7.0.0)
-      actionpack (= 7.0.0)
-      actiontext (= 7.0.0)
-      actionview (= 7.0.0)
-      activejob (= 7.0.0)
-      activemodel (= 7.0.0)
-      activerecord (= 7.0.0)
-      activestorage (= 7.0.0)
-      activesupport (= 7.0.0)
-      bundler (>= 1.15.0)
-      railties (= 7.0.0)
-    railties (7.0.0)
-      actionpack (= 7.0.0)
-      activesupport (= 7.0.0)
-      method_source
-      rake (>= 12.2)
-      thor (~> 1.0)
-      zeitwerk (~> 2.5)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
     bindex (0.8.1)
     bson (4.13.0)
     builder (3.2.4)
@@ -101,7 +74,7 @@ GEM
     chronic (0.10.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    dalli (2.7.11)
+    dalli (3.1.5)
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.4)
@@ -151,11 +124,32 @@ GEM
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rails (7.0.0)
+      actioncable (= 7.0.0)
+      actionmailbox (= 7.0.0)
+      actionmailer (= 7.0.0)
+      actionpack (= 7.0.0)
+      actiontext (= 7.0.0)
+      actionview (= 7.0.0)
+      activejob (= 7.0.0)
+      activemodel (= 7.0.0)
+      activerecord (= 7.0.0)
+      activestorage (= 7.0.0)
+      activesupport (= 7.0.0)
+      bundler (>= 1.15.0)
+      railties (= 7.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
+    railties (7.0.0)
+      actionpack (= 7.0.0)
+      activesupport (= 7.0.0)
+      method_source
+      rake (>= 12.2)
+      thor (~> 1.0)
+      zeitwerk (~> 2.5)
     rake (13.0.6)
     ruby-prof (1.4.3)
     sass-rails (6.0.0)
@@ -207,7 +201,7 @@ DEPENDENCIES
   byebug
   capistrano (~> 2.15.6)
   capistrano_colors
-  dalli (~> 2.7)
+  dalli (~> 3.1)
   ffi (~> 1.15)
   ffi-rzmq (~> 2.0.1)
   ffi-rzmq-core (~> 1.0.5)
@@ -217,7 +211,7 @@ DEPENDENCIES
   logjam_agent (>= 0.32.2)
   mongo (~> 2.8)
   oj (~> 3.0)
-  rails (~> 7.0)!
+  rails (~> 7.0.0)
   rake
   ruby-prof
   sass-rails (~> 6.0)
@@ -229,4 +223,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   2.2.33
+   2.3.4
