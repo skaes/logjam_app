@@ -1,5 +1,7 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: 499f12f6c03a4114eb649310e65200fe5d894db0
+  branch: 7-0-stable
   specs:
     actioncable (7.0.0)
       actionpack (= 7.0.0)
@@ -60,6 +62,31 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    rails (7.0.0)
+      actioncable (= 7.0.0)
+      actionmailbox (= 7.0.0)
+      actionmailer (= 7.0.0)
+      actionpack (= 7.0.0)
+      actiontext (= 7.0.0)
+      actionview (= 7.0.0)
+      activejob (= 7.0.0)
+      activemodel (= 7.0.0)
+      activerecord (= 7.0.0)
+      activestorage (= 7.0.0)
+      activesupport (= 7.0.0)
+      bundler (>= 1.15.0)
+      railties (= 7.0.0)
+    railties (7.0.0)
+      actionpack (= 7.0.0)
+      activesupport (= 7.0.0)
+      method_source
+      rake (>= 12.2)
+      thor (~> 1.0)
+      zeitwerk (~> 2.5)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     bindex (0.8.1)
     bson (4.13.0)
     builder (3.2.4)
@@ -124,32 +151,11 @@ GEM
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (7.0.0)
-      actioncable (= 7.0.0)
-      actionmailbox (= 7.0.0)
-      actionmailer (= 7.0.0)
-      actionpack (= 7.0.0)
-      actiontext (= 7.0.0)
-      actionview (= 7.0.0)
-      activejob (= 7.0.0)
-      activemodel (= 7.0.0)
-      activerecord (= 7.0.0)
-      activestorage (= 7.0.0)
-      activesupport (= 7.0.0)
-      bundler (>= 1.15.0)
-      railties (= 7.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    railties (7.0.0)
-      actionpack (= 7.0.0)
-      activesupport (= 7.0.0)
-      method_source
-      rake (>= 12.2)
-      thor (~> 1.0)
-      zeitwerk (~> 2.5)
     rake (13.0.6)
     ruby-prof (1.4.3)
     sass-rails (6.0.0)
@@ -211,7 +217,7 @@ DEPENDENCIES
   logjam_agent (>= 0.32.2)
   mongo (~> 2.8)
   oj (~> 3.0)
-  rails (~> 7.0.0)
+  rails (~> 7.0.0)!
   rake
   ruby-prof
   sass-rails (~> 6.0)

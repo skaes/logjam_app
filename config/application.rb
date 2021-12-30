@@ -1,8 +1,5 @@
 require_relative 'boot'
 
-# fix 7.0.0 bug
-require_relative "../lib/active_support_descendants_fix"
-
 require "rails"
 # Pick the frameworks you want:
 # require "active_model/railtie"
