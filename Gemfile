@@ -8,7 +8,7 @@ gem "rake"
 gem "rails",          '~> 7.0.0', github: "rails/rails", branch: "7-0-stable"
 gem "dalli",          '~> 3.1'
 gem "mongo",          '~> 2.8'
-gem "bson",           '~> 4.5'      #, :git => "https://github.com/skaes/bson-ruby.git", :branch => "reduce-memory-allocation-on-resizing-buffers"
+gem "bson",           '~> 4.5'      #, github: "skaes/bson-ruby", :branch => "reduce-memory-allocation-on-resizing-buffers"
 gem "oj",             '~> 3.0'
 gem "ffi",            '~> 1.15'
 gem "ffi-rzmq-core",  '~> 1.0.5'    #, :path => "~/src/ffi-rzmq-core"
@@ -17,7 +17,7 @@ gem "snappy",         '~> 0.2.0'    #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.32.2'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
-gem "font-awesome-rails", '~> 4.7.0.6' #, :git => "https://github.com/bokmann/font-awesome-rails.git", :branch => "master"
+gem "font-awesome-rails", '~> 4.7.0.6' #, github: "bokmann/font-awesome-rails", :branch => "master"
 gem "whenever", :require => false
 
 gem "ruby-prof", :group => [:development, :test]
