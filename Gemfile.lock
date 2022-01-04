@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: c837883cfcf880ac7a96223545b0cf4fac2986e0
+  revision: bed85678aaaa1f483704c305edc5c2c62403693e
   branch: 7-0-stable
   specs:
     actioncable (7.0.0)
@@ -109,7 +109,7 @@ GEM
     chronic (0.10.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    dalli (3.1.6)
+    dalli (3.2.0)
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.4)
