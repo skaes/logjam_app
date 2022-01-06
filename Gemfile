@@ -21,7 +21,7 @@ gem "font-awesome-rails", '~> 4.7.0.6' #, github: "bokmann/font-awesome-rails", 
 gem "whenever", :require => false
 
 # RSA host keys broken with openssl 3.0.0
-gem 'openssl', '~> 2.2.1' if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1.0")
+gem 'openssl', '~> 2.2.1'
 
 gem "ruby-prof", :group => [:development, :test]
 
