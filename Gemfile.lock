@@ -84,14 +84,6 @@ GIT
       thor (~> 1.0)
       zeitwerk (~> 2.5)
 
-GIT
-  remote: https://github.com/skaes/openssl.git
-  revision: 7fe2006954b53cf7e2af308f2dc842cb1565523b
-  ref: 7fe2006954b53cf7e2af308f2dc842cb1565523b
-  specs:
-    openssl (2.2.1)
-      ipaddr
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -156,6 +148,8 @@ GEM
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     oj (3.13.10)
+    openssl (2.2.1)
+      ipaddr
     racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -226,7 +220,7 @@ DEPENDENCIES
   logjam_agent (>= 0.32.2)
   mongo (~> 2.8)
   oj (~> 3.0)
-  openssl (~> 2.2.1)!
+  openssl (~> 2.2.1)
   rails (~> 7.0.0)!
   rake
   ruby-prof

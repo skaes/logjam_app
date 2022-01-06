@@ -19,7 +19,9 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "font-awesome-rails", '~> 4.7.0.6' #, github: "bokmann/font-awesome-rails", :branch => "master"
 gem "whenever", :require => false
-gem 'openssl', '~> 2.2.1', git: "https://github.com/skaes/openssl.git", ref: "7fe2006954b53cf7e2af308f2dc842cb1565523b"
+
+# RSA host keys broken with openssl 3.0.0
+gem 'openssl', '~> 2.2.1' if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1.0")
 
 gem "ruby-prof", :group => [:development, :test]
 
