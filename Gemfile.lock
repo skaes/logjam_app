@@ -84,7 +84,7 @@ GEM
     digest (3.1.0)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.4)
+    ffi (1.15.5)
     ffi-rzmq (2.0.7)
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
@@ -200,7 +200,7 @@ GEM
     thor (1.2.1)
     thread_variables (0.2.0)
     tilt (2.0.10)
-    time_bandits (0.12.4)
+    time_bandits (0.12.5)
       activesupport (>= 5.2.0)
       thread_variables
     timeout (0.2.0)
