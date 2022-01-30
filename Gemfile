@@ -39,7 +39,10 @@ group :deployment do
   gem "capistrano_colors"
 end
 
-gem "uglifier", '>= 1.3.0'
-
 gem "cssbundling-rails"
+gem "jsbundling-rails"
 gem "sprockets-rails"
+gem "terser"
+
+# only needed for css compression
+gem "sass-rails"
