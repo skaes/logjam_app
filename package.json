@@ -4,7 +4,7 @@
   "dependencies": {
     "d3": "5.9.2",
     "esbuild": "^0.14.14",
-    "jquery": "2.1.1",
+    "jquery": "3.5.0",
     "jquery-migrate": "1.2.1",
     "sass": "^1.49.0",
     "urijs": "^1.19.7"
