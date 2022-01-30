@@ -18,11 +18,10 @@ require 'time_bandits'
 require 'logjam_agent'
 require 'gc_hacks'
 require 'dalli'
-require 'font-awesome-rails'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-# Bundler.require(*Rails.groups)
+Bundler.require(*Rails.groups)
 
 module LogjamApp
   class Application < Rails::Application

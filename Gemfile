@@ -17,7 +17,6 @@ gem "snappy",         '~> 0.2.0'    #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.32.2'   #, :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
-gem "font-awesome-rails", '~> 4.7.0.6' #, github: "bokmann/font-awesome-rails", :branch => "master"
 gem "whenever", :require => false
 
 # RSA host keys broken with openssl 3.0.0
@@ -40,5 +39,7 @@ group :deployment do
   gem "capistrano_colors"
 end
 
-gem "sass-rails", '~> 6.0'
 gem "uglifier", '>= 1.3.0'
+
+gem "cssbundling-rails"
+gem "sprockets-rails"
