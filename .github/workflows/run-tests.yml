@@ -13,8 +13,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
+
+      - name: Check out logjam core
+        run: sed -i -e 's/url = git:/url = https:/' .gitmodules && git submodule init && git submodule update
 
       - name: Start containers
         run: docker-compose -f docker-compose.yml up -d
