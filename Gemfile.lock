@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/mongodb/mongo-ruby-driver.git
-  revision: 3c675eaad6e892dc5e51c11e6c7ca870958a46af
-  ref: 3c675eaad6e892dc5e51c11e6c7ca870958a46af
-  specs:
-    mongo (2.17.0)
-      bson (>= 4.14.1, < 5.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -124,6 +116,8 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.15.0)
+    mongo (2.17.1)
+      bson (>= 4.8.2, < 5.0.0)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -244,7 +238,7 @@ DEPENDENCIES
   gc_hacks
   jsbundling-rails
   logjam_agent (>= 0.32.2)
-  mongo (~> 2.8)!
+  mongo (~> 2.17, >= 2.17.1)
   oj (~> 3.0)
   openssl (~> 2.2.1)
   rails (~> 7.0.1)
