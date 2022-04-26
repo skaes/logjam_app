@@ -7,7 +7,7 @@
     "jquery": "3.6.0",
     "jquery-migrate": "3.3.2",
     "sass": "^1.49.0",
-    "urijs": "^1.19.7"
+    "urijs": "^1.19.11"
   },
   "scripts": {
     "build:css": "sass ./app/assets/stylesheets/application.sass.scss ./app/assets/builds/application.css --no-source-map --load-path=node_modules",
