@@ -196,7 +196,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    strscan (3.0.3)
+    strscan (3.0.1)
     terser (1.1.9)
       execjs (>= 0.3.0, < 3)
     thor (1.2.1)
@@ -247,6 +247,7 @@ DEPENDENCIES
   sass-rails
   snappy (~> 0.3.0)
   sprockets-rails
+  strscan (= 3.0.1)
   terser
   time_bandits (>= 0.10)
   web-console
