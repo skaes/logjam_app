@@ -84,7 +84,7 @@ GEM
       railties (>= 6.0.0)
     dalli (3.2.2)
     digest (3.1.0)
-    erubi (1.10.0)
+    erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
     ffi-rzmq (2.0.7)
@@ -101,7 +101,7 @@ GEM
     ipaddr (1.2.4)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    logjam_agent (0.33.1)
+    logjam_agent (0.33.3)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
@@ -116,7 +116,7 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
     minitest (5.16.2)
-    mongo (2.18.0)
+    mongo (2.18.1)
       bson (>= 4.14.1, < 5.0.0)
     net-imap (0.2.3)
       digest
@@ -143,7 +143,7 @@ GEM
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    oj (3.13.17)
+    oj (3.13.20)
     openssl (2.2.1)
       ipaddr
     racc (1.6.0)
