@@ -101,7 +101,7 @@ GEM
     ipaddr (1.2.4)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    logjam_agent (0.34.1)
+    logjam_agent (0.34.2)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
@@ -202,7 +202,7 @@ GEM
     thor (1.2.1)
     thread_variables (0.2.0)
     tilt (2.0.11)
-    time_bandits (0.12.5)
+    time_bandits (0.12.7)
       activesupport (>= 5.2.0)
       thread_variables
     timeout (0.3.0)
