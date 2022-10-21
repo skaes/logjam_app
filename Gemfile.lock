@@ -100,7 +100,7 @@ GEM
     ipaddr (1.2.4)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    logjam_agent (0.35.1)
+    logjam_agent (0.37.0)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
