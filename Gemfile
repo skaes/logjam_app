@@ -18,6 +18,9 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "whenever", :require => false
 
+# Silence Dependabot?
+gem "nokogiri", ">= 1.13.9"
+
 # RSA host keys broken with openssl 3.0.0
 gem 'openssl', '~> 2.2.1'
 
