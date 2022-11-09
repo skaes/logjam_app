@@ -233,6 +233,7 @@ DEPENDENCIES
   jsbundling-rails
   logjam_agent (>= 0.32.2)
   mongo (~> 2.17, >= 2.17.1)
+  nokogiri (>= 1.13.9)
   oj (~> 3.0)
   openssl (~> 2.2.1)
   rails (~> 7.0.1)
