@@ -1,4 +1,4 @@
-mongodb: mongod
+mongodb: mongod --dbpath ./data
 memcached: memcached
 # we need to give mongo some time to start properly
 importer: sleep 2 && ./service/importer/run -s development

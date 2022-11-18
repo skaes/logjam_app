@@ -28,3 +28,4 @@ misc
 node_modules
 
 /public/assets/*.map
+/data/
