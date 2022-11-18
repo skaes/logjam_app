@@ -48,12 +48,3 @@ gem "terser"
 
 # only needed for css compression
 gem "sass-rails"
-
-# We need to fix strscan to the version shipped with Ruby 3.1.2,
-# because passenger apparently always loads strscan before bundler
-# kicks in, at least in version 6.0.14. This needs additional
-# investigation, because this here is nothing but an ugly hack.
-
-# App 6831 output: Error: The application encountered the following error: You have already activated strscan 3.0.1, but your Gemfile requires strscan 3.0.3. Since strscan is a default gem, you can either remove your dependency on it or try updating to a newer version of bundler that supports strscan as a default gem. (Gem::LoadError)
-
-gem "strscan", "3.0.1"
