@@ -97,10 +97,10 @@ GEM
     highline (2.0.3)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    ipaddr (1.2.4)
+    ipaddr (1.2.5)
     jsbundling-rails (1.0.3)
       railties (>= 6.0.0)
-    logjam_agent (0.38.1)
+    logjam_agent (0.38.2)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
