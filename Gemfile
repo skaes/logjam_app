@@ -18,11 +18,8 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "whenever", :require => false
 
-# Silence Dependabot?
+# Silence Dependabot? And force native compile until new nokogiri is released.
 gem "nokogiri", ">= 1.13.10", force_ruby_platform: true
-
-# RSA host keys broken with openssl 3.0.0
-gem 'openssl', '~> 2.2.1'
 
 gem "ruby-prof", :group => [:development, :test], :require => false
 
