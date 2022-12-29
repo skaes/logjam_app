@@ -9,8 +9,7 @@ on:
 jobs:
   test:
 
-    # we can't run on jammy, because it requires openssl 3.x
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
