@@ -95,7 +95,7 @@ GEM
     gc_hacks (0.0.3)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    highline (2.0.3)
+    highline (2.1.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jsbundling-rails (1.1.1)
