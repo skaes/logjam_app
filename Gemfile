@@ -18,8 +18,8 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "whenever", :require => false
 
-# Silence Dependabot? And force native compile until new nokogiri is released.
-gem "nokogiri", ">= 1.13.10", force_ruby_platform: true
+# Use nokogiri prerelease gem.
+gem "nokogiri", ">= 1.14.0.rc1"
 
 gem "ruby-prof", :group => [:development, :test], :require => false
 
