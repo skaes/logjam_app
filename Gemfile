@@ -18,9 +18,6 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "whenever", :require => false
 
-# Use nokogiri prerelease gem.
-gem "nokogiri", ">= 1.14.0.rc1"
-
 gem "ruby-prof", :group => [:development, :test], :require => false
 
 group :development do
