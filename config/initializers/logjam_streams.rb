@@ -5,7 +5,8 @@ module Logjam
   # ----------------------- #
   #     devices config      #
   # ----------------------- #
-  self.devices = [
+  self.devices = ENV['LOGJAM_DEVICES']&.split(/[\s,]+/) || [
+    "tcp://localhost:9606",   # logjam-device
     "tcp://localhost:9706",   # logjam-httpd
   ]
 
