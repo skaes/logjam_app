@@ -5,10 +5,7 @@ module Logjam
   # ----------------------- #
   #     devices config      #
   # ----------------------- #
-  self.devices = ENV['LOGJAM_DEVICES']&.split(/[\s,]+/) || [
-    "tcp://localhost:9606",   # logjam-device
-    "tcp://localhost:9706",   # logjam-httpd
-  ]
+  self.devices = ENV['LOGJAM_DEVICES'].to_s.split(/[\s,]+/)
 
   # ----------------------- #
   # performance data stream #
