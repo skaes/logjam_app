@@ -33,7 +33,9 @@ set :default_environment, {
   "SVWAIT"                    => 15,
   "LOGJAM_IMPORTER_INSTALL"   => 1,
   "LOGJAM_HTTPD_INSTALL"      => 1,
-  "LOGJAM_LIVESTREAM_INSTALL" => 1
+  "LOGJAM_LIVESTREAM_INSTALL" => 1,
+  "LOGJAM_DEVICE_INSTALL"     => 1,
+  "LOGJAM_EXPORTER_INSTALL"   => 1,
 }
 
 # don't normalize asset timestamps, as we're using the asset pipeline'
