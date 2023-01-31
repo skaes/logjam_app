@@ -204,7 +204,7 @@ GEM
       activesupport (>= 5.2.0)
       thread_variables
     timeout (0.3.1)
-    tzinfo (2.0.5)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
