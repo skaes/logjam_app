@@ -176,7 +176,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    ruby-prof (1.4.5)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.4.0)
@@ -243,7 +242,6 @@ DEPENDENCIES
   oj (~> 3.0)
   rails (~> 7.0.1)
   rake
-  ruby-prof
   sass-rails
   snappy (~> 0.3.0)
   sprockets-rails

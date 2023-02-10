@@ -18,7 +18,7 @@ gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
 gem "whenever", :require => false
 
-gem "ruby-prof", :group => [:development, :test], :require => false
+# gem "ruby-prof", :group => [:development, :test], :require => false
 
 group :development do
   gem "byebug"
