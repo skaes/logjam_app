@@ -82,7 +82,7 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.1.2)
       railties (>= 6.0.0)
-    dalli (3.2.3)
+    dalli (3.2.4)
     date (3.3.3)
     erubi (1.12.0)
     execjs (2.8.1)
