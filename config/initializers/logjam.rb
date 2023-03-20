@@ -12,6 +12,9 @@ module Logjam
   # data is added to the stats, though.
   self.import_threshold = ENV['LOGJAM_IMPORT_THRESHOLD'] || 500
 
+  # Sensitive cookies which must be masked for import.
+  # self.sensitive_cookies = []
+
   # Set how many days we keep request details stored in mongo.
   self.request_cleaning_threshold = ENV['LOGJAM_REQUEST_CLEANING_THRESHOLD'] || 7
 
