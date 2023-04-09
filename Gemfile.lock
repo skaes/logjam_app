@@ -144,7 +144,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.2-x86_64-linux)
       racc (~> 1.4)
-    oj (3.14.2)
+    oj (3.14.3)
     racc (1.6.2)
     rack (2.2.6.4)
     rack-test (2.1.0)
@@ -252,4 +252,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   2.4.1
+   2.4.10
