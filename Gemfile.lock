@@ -196,7 +196,7 @@ GEM
       sprockets (>= 3.0.0)
     terser (1.1.15)
       execjs (>= 0.3.0, < 3)
-    thor (1.2.1)
+    thor (1.2.2)
     thread_variables (0.2.0)
     tilt (2.1.0)
     time_bandits (0.13.1)
