@@ -199,7 +199,7 @@ GEM
       execjs (>= 0.3.0, < 3)
     thor (1.2.2)
     thread_variables (0.2.0)
-    tilt (2.1.0)
+    tilt (2.2.0)
     time_bandits (0.13.1)
       activesupport (>= 5.2.0)
       thread_variables
