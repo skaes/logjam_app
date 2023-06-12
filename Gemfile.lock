@@ -96,7 +96,7 @@ GEM
     globalid (1.1.0)
       activesupport (>= 5.0)
     highline (2.1.0)
-    i18n (1.14.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
