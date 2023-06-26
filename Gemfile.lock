@@ -203,7 +203,7 @@ GEM
     time_bandits (0.13.1)
       activesupport (>= 5.2.0)
       thread_variables
-    timeout (0.3.2)
+    timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
