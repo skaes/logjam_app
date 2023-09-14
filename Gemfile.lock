@@ -98,7 +98,7 @@ GEM
     highline (2.1.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    jsbundling-rails (1.1.2)
+    jsbundling-rails (1.2.1)
       railties (>= 6.0.0)
     logjam_agent (0.38.5)
       activesupport
