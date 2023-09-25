@@ -86,7 +86,7 @@ GEM
     date (3.3.3)
     erubi (1.12.0)
     execjs (2.9.1)
-    ffi (1.15.5)
+    ffi (1.16.1)
     ffi-rzmq (2.0.7)
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
