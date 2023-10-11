@@ -122,7 +122,7 @@ GEM
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
       time_bandits (>= 0.12.2)
-    loofah (2.21.3)
+    loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
