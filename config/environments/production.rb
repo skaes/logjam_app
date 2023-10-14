@@ -12,9 +12,6 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
-  # Need to revisit this later
-  config.enable_dependency_loading = true
-
   # force our app to become essentially single threaded
   # TODO: do we really need this?
   config.middleware.insert_before Rack::Runtime, Rack::Lock
