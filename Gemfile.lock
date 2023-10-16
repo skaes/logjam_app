@@ -162,7 +162,7 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     oj (3.16.1)
-    psych (5.1.1)
+    psych (5.1.1.1)
       stringio
     racc (1.7.1)
     rack (3.0.8)
