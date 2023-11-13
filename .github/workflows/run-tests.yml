@@ -21,7 +21,7 @@ jobs:
         run: docker-compose -f docker-compose.yml up -d
 
       - name: Install system packages
-        run: sudo apt-get install build-essential zlib1g-dev libssl-dev libzmq3-dev
+        run: sudo apt-get update && sudo apt-get install build-essential zlib1g-dev libssl-dev libzmq3-dev
 
       - name: Set up Node
         uses: actions/setup-node@v3
