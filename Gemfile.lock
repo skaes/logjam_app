@@ -137,7 +137,7 @@ GEM
     mongo (2.19.3)
       bson (>= 4.14.1, < 5.0.0)
     mutex_m (0.2.0)
-    net-imap (0.4.4)
+    net-imap (0.4.7)
       date
       net-protocol
     net-pop (0.1.2)
