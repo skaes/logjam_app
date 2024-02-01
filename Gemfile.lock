@@ -94,7 +94,8 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.4.0)
       railties (>= 6.0.0)
-    dalli (3.2.6)
+    dalli (3.2.7)
+      base64
     date (3.3.4)
     drb (2.2.0)
       ruby2_keywords
