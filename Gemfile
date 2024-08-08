@@ -16,6 +16,7 @@ gem "snappy",         '~> 0.3.0'    #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.39.0'   # , :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
+gem "csv"
 gem "whenever", :require => false
 
 # gem "ruby-prof", :group => [:development, :test], :require => false
