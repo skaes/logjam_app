@@ -1,5 +1,3 @@
-version: '2'
-
 services:
   memcached:
     image: memcached:1.6.12
