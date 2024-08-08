@@ -4,7 +4,7 @@ source "https://rubygems.org"
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake"
-gem "rails",          '~> 7.1.0'
+gem "rails",          '~> 7.2.0.rc1'
 gem "dalli",          '~> 3.1'
 gem "mongo",          '~> 2.17', '>= 2.17.1'
 gem "bson",           '~> 4.5'
@@ -16,6 +16,7 @@ gem "snappy",         '~> 0.3.0'    #, :path => "~/src/rbsnappy"
 gem "logjam_agent",   '>= 0.39.0'   # , :path => "~/src/logjam_agent"
 gem "time_bandits",   '>= 0.10'     #, :path => "~/src/time_bandits"
 gem "gc_hacks"
+gem "csv"
 gem "whenever", :require => false
 
 # gem "ruby-prof", :group => [:development, :test], :require => false
