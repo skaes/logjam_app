@@ -31,6 +31,9 @@ module LogjamApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # We don't need to encrypt credentials as there is no user specific content.
+    config.credentials.content_path = Rails.root.join("config", "credentials", "#{Rails.env}.yml")
+
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
