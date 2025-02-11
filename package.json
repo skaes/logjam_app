@@ -3,7 +3,7 @@
   "private": "true",
   "dependencies": {
     "d3": "7.3.0",
-    "esbuild": "^0.14.54",
+    "esbuild": "^0.25.0",
     "jquery": "3.6.0",
     "jquery-migrate": "3.3.2",
     "sass": "^1.60.0",
