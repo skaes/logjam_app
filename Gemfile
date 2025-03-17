@@ -4,7 +4,7 @@ source "https://rubygems.org"
 ENV['PKG_CONFIG_PATH'] = [ "/opt/logjam/lib/pkgconfig", ENV['PKG_CONFIG_PATH'] ].compact.join(':')
 
 gem "rake"
-gem "rails",          '~> 7.2.0'
+gem "rails",          '~> 8.0.2'
 gem "dalli",          '~> 3.1'
 gem "mongo",          '~> 2.17', '>= 2.17.1'
 gem "bson",           '~> 4.5'
