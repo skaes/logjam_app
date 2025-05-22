@@ -95,7 +95,8 @@ GEM
     csv (3.3.4)
     dalli (3.2.8)
     date (3.4.1)
-    drb (2.2.1)
+    drb (2.2.3)
+    erb (5.0.1)
     erubi (1.13.1)
     execjs (2.10.0)
     ffi (1.17.2-aarch64-linux-gnu)
@@ -127,7 +128,7 @@ GEM
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
       time_bandits (>= 0.12.2)
-    loofah (2.24.0)
+    loofah (2.24.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
     mail (2.8.1)
@@ -174,11 +175,11 @@ GEM
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
-    psych (5.2.4)
+    psych (5.2.6)
       date
       stringio
     racc (1.8.1)
-    rack (3.1.13)
+    rack (3.1.15)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -200,7 +201,7 @@ GEM
       activesupport (= 8.0.2)
       bundler (>= 1.15.0)
       railties (= 8.0.2)
-    rails-dom-testing (2.2.0)
+    rails-dom-testing (2.3.0)
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
@@ -216,7 +217,8 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
-    rdoc (6.13.1)
+    rdoc (6.14.0)
+      erb
       psych (>= 4.0.0)
     reline (0.6.1)
       io-console (~> 0.5)
@@ -268,7 +270,7 @@ GEM
     websocket-extensions (0.1.5)
     whenever (1.0.0)
       chronic (>= 0.6.3)
-    zeitwerk (2.7.2)
+    zeitwerk (2.7.3)
 
 PLATFORMS
   aarch64-linux
