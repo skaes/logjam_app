@@ -107,7 +107,8 @@ GEM
       ffi-rzmq-core (>= 1.0.7)
     ffi-rzmq-core (1.0.7)
       ffi
-    foreman (0.88.1)
+    foreman (0.90.0)
+      thor (~> 1.4)
     gc_hacks (0.0.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -179,7 +180,7 @@ GEM
       date
       stringio
     racc (1.8.1)
-    rack (3.1.16)
+    rack (3.2.0)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -248,7 +249,7 @@ GEM
     thor (1.4.0)
     thread_variables (0.2.0)
     tilt (2.6.1)
-    time_bandits (0.15.1)
+    time_bandits (0.15.2)
       activesupport (>= 5.2.0)
       base64
       mutex_m
