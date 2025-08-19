@@ -140,7 +140,7 @@ GEM
     marcel (1.0.4)
     mini_mime (1.1.5)
     minitest (5.25.5)
-    mongo (2.21.2)
+    mongo (2.21.3)
       base64
       bson (>= 4.14.1, < 6.0.0)
     mutex_m (0.3.0)
