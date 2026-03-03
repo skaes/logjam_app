@@ -19,6 +19,11 @@ gem "gc_hacks"
 gem "csv"
 gem "whenever", :require => false
 
+# pinned gems with incompatible new versions
+gem "connection_pool", '~> 2.5'
+gem "minitest",        '~> 5.26'
+
+
 # gem "ruby-prof", :group => [:development, :test], :require => false
 
 group :development do
