@@ -260,7 +260,7 @@ GEM
       base64
       mutex_m
       thread_variables
-    timeout (0.6.0)
+    timeout (0.6.1)
     tsort (0.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
